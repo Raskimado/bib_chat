@@ -21,7 +21,7 @@ prompt = ChatPromptTemplate.from_messages(
     "If you lack information, respond with 'I am not sure.'"
     "Only give possible book titles if you are very sure. Otherwise, answer that"
     "you don't know any suitable titles or only have a few guesses."
-    "Be berief, concise and friendly. Use at least on sentence."
+    "Be berief, concise and friendly. Use at least one sentence."
     "Aks clarifying questions if needed to better understand the query."
     "If possible make sure the response contains three titles."
     "If you do not find three matching title, be truthful and just mention what"
