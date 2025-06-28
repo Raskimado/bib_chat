@@ -13,7 +13,7 @@ llm = OllamaLLM(
 prompt = ChatPromptTemplate.from_messages(
     [
     ("system",
-     "You are a recommendation AI. You recommendations include books, e-books,"
+    "You are a recommendation AI. You recommendations include books, e-books,"
     "print journals und e-journals."
     "Answer the user's questions based on the context {context} provided, but"
     "do not mention the context or retrieval process. If you do not have enough"
