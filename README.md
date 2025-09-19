@@ -15,11 +15,11 @@ This project contains a demo chatbot to query library data.
 ## Installation
 Ollama (ollama pull for models)
 - LLM: llama3.1:8b-instruct-q8_0
-- - Emedding: mxbai-embed-large:335m
+   Emedding: mxbai-embed-large:335m
 
 OpenAI (Use OpenAI API)
 - LLM: gpt-4.1-nano
-- - Embedding: text-embedding-3-small
+- Embedding: text-embedding-3-small
     
 Python dependencies (pip install *)
 - faiss-cpu==1.12.0
@@ -37,5 +37,6 @@ If you pull the directory on your computer you can start the program with:
 streamlit run st_app.py
 For a succesful execution you have to use local Ollama or OpenAI with the
 environment varibles.
+
 
 
