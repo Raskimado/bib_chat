@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module multi_query</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">multi_query</strong> (version 0.1)</td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Czzzmasterarbeit%5C02%20wissenschaftliche%20arbeit%5C05%20projektcode%5C08_final%5C02_version_final%5Cmulti_query.py">c:\zzzmasterarbeit\02 wissenschaftliche arbeit\05 projektcode\08_final\02_version_final\multi_query.py</a></td></tr></table>
+    <p><span class="code">This&nbsp;module&nbsp;generates&nbsp;multiple&nbsp;query&nbsp;based&nbsp;on&nbsp;the&nbsp;orignal&nbsp;query.&nbsp;This&nbsp;should<br>
+lead&nbsp;to&nbsp;more&nbsp;diversity&nbsp;in&nbsp;the&nbsp;output&nbsp;of&nbsp;the&nbsp;retriever.<br>
+&nbsp;<br>
+Class:<br>
+<a href="#LineListOutputParser">LineListOutputParser</a>(BaseOutputParser[List[str]]):&nbsp;Output&nbsp;parse&nbsp;for&nbsp;a&nbsp;list&nbsp;of<br>
+lines.<br>
+&nbsp;<br>
+Functions:<br>
+-&nbsp;parse(self,&nbsp;text:&nbsp;str)&nbsp;-&gt;&nbsp;List[str]:&nbsp;Splits&nbsp;list&nbsp;into&nbsp;queries.<br>
+-&nbsp;multi-query():&nbsp;Defines&nbsp;task&nbsp;to&nbsp;generate&nbsp;multiple&nbsp;queries.</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="langchain_core.output_parsers.base.html#BaseOutputParser[List[str]]">langchain_core.output_parsers.base.BaseOutputParser[List[str]]</a>(<a href="langchain_core.output_parsers.base.html#BaseOutputParser">langchain_core.output_parsers.base.BaseOutputParser</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="multi_query.html#LineListOutputParser">LineListOutputParser</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="LineListOutputParser">class <strong>LineListOutputParser</strong></a>(<a href="langchain_core.output_parsers.base.html#BaseOutputParser[List[str]]">langchain_core.output_parsers.base.BaseOutputParser[List[str]]</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#LineListOutputParser">LineListOutputParser</a>(*args:&nbsp;Any,&nbsp;name:&nbsp;Optional[str]&nbsp;=&nbsp;None)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+Output&nbsp;parser&nbsp;for&nbsp;a&nbsp;list&nbsp;of&nbsp;lines.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="multi_query.html#LineListOutputParser">LineListOutputParser</a></dd>
+<dd><a href="langchain_core.output_parsers.base.html#BaseOutputParser[List[str]]">langchain_core.output_parsers.base.BaseOutputParser[List[str]]</a></dd>
+<dd><a href="langchain_core.output_parsers.base.html#BaseOutputParser">langchain_core.output_parsers.base.BaseOutputParser</a></dd>
+<dd><a href="langchain_core.output_parsers.base.html#BaseLLMOutputParser">langchain_core.output_parsers.base.BaseLLMOutputParser</a></dd>
+<dd><a href="langchain_core.runnables.base.html#RunnableSerializable[Union[BaseMessage, str], TypeVar]">langchain_core.runnables.base.RunnableSerializable[Union[BaseMessage, str], TypeVar]</a></dd>
+<dd><a href="langchain_core.runnables.base.html#RunnableSerializable">langchain_core.runnables.base.RunnableSerializable</a></dd>
+<dd><a href="langchain_core.load.serializable.html#Serializable">langchain_core.load.serializable.Serializable</a></dd>
+<dd><a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a></dd>
+<dd><a href="langchain_core.runnables.base.html#Runnable">langchain_core.runnables.base.Runnable</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="typing.html#Generic">typing.Generic</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="LineListOutputParser-parse"><strong>parse</strong></a>(self, text: str) -&gt; List[str]</dt><dd><span class="code">Split&nbsp;the&nbsp;LLM&nbsp;result&nbsp;into&nbsp;a&nbsp;list&nbsp;of&nbsp;queries</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {}</dl>
+
+<dl><dt><strong>__class_vars__</strong> = set()</dl>
+
+<dl><dt><strong>__parameters__</strong> = ()</dl>
+
+<dl><dt><strong>__private_attributes__</strong> = {}</dl>
+
+<dl><dt><strong>__pydantic_complete__</strong> = True</dl>
+
+<dl><dt><strong>__pydantic_computed_fields__</strong> = {}</dl>
+
+<dl><dt><strong>__pydantic_core_schema__</strong> = {'cls': &lt;class 'multi_query.LineListOutputParser'&gt;, 'config': {'extra_fields_behavior': 'ignore', 'title': 'LineListOutputParser'}, 'custom_init': True, 'metadata': {'pydantic_js_functions': [&lt;bound method BaseModel.__get_pydantic_json_schema__ of &lt;class 'multi_query.LineListOutputParser'&gt;&gt;]}, 'ref': 'multi_query.LineListOutputParser:2485611609216', 'root_model': False, 'schema': {'computed_fields': [], 'fields': {'name': {'metadata': {}, 'schema': {'default': None, 'schema': {'schema': {...}, 'type': 'nullable'}, 'type': 'default'}, 'type': 'model-field'}}, 'model_name': 'LineListOutputParser', 'type': 'model-fields'}, 'type': 'model'}</dl>
+
+<dl><dt><strong>__pydantic_custom_init__</strong> = True</dl>
+
+<dl><dt><strong>__pydantic_decorators__</strong> = DecoratorInfos(validators={}, field_validators={...zers={}, model_validators={}, computed_fields={})</dl>
+
+<dl><dt><strong>__pydantic_fields__</strong> = {'name': FieldInfo(annotation=Union[str, NoneType], required=False, default=None)}</dl>
+
+<dl><dt><strong>__pydantic_generic_metadata__</strong> = {'args': (), 'origin': None, 'parameters': ()}</dl>
+
+<dl><dt><strong>__pydantic_parent_namespace__</strong> = None</dl>
+
+<dl><dt><strong>__pydantic_post_init__</strong> = None</dl>
+
+<dl><dt><strong>__pydantic_serializer__</strong> = SchemaSerializer(serializer=Model(
+    ModelSeri..."LineListOutputParser",
+    },
+), definitions=[])</dl>
+
+<dl><dt><strong>__pydantic_setattr_handlers__</strong> = {}</dl>
+
+<dl><dt><strong>__pydantic_validator__</strong> = SchemaValidator(title="LineListOutputParser", va...r",
+    },
+), definitions=[], cache_strings=True)</dl>
+
+<dl><dt><strong>__signature__</strong> = &lt;Signature (*args: Any, name: Optional[str] = None) -&gt; None&gt;</dl>
+
+<dl><dt><strong>model_config</strong> = {'extra': 'ignore', 'protected_namespaces': ()}</dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.output_parsers.base.html#BaseOutputParser">langchain_core.output_parsers.base.BaseOutputParser</a>:<br>
+<dl><dt>async <a name="LineListOutputParser-ainvoke"><strong>ainvoke</strong></a>(
+    self,
+    input: 'Union[str, BaseMessage]',
+    config: 'Optional[RunnableConfig]' = None,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'T'</dt><dd><span class="code">Default&nbsp;implementation&nbsp;of&nbsp;``ainvoke``,&nbsp;calls&nbsp;``invoke``&nbsp;from&nbsp;a&nbsp;thread.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;allows&nbsp;usage&nbsp;of&nbsp;async&nbsp;code&nbsp;even&nbsp;if<br>
+the&nbsp;``Runnable``&nbsp;did&nbsp;not&nbsp;implement&nbsp;a&nbsp;native&nbsp;async&nbsp;version&nbsp;of&nbsp;``invoke``.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;run&nbsp;asynchronously.</span></dd></dl>
+
+<dl><dt>async <a name="LineListOutputParser-aparse"><strong>aparse</strong></a>(self, text: 'str') -&gt; 'T'</dt><dd><span class="code">Async&nbsp;parse&nbsp;a&nbsp;single&nbsp;string&nbsp;model&nbsp;output&nbsp;into&nbsp;some&nbsp;structure.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text:&nbsp;String&nbsp;output&nbsp;of&nbsp;a&nbsp;language&nbsp;model.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Structured&nbsp;output.</span></dd></dl>
+
+<dl><dt>async <a name="LineListOutputParser-aparse_result"><strong>aparse_result</strong></a>(self, result: 'list[Generation]', *, partial: 'bool' = False) -&gt; 'T'</dt><dd><span class="code">Async&nbsp;parse&nbsp;a&nbsp;list&nbsp;of&nbsp;candidate&nbsp;model&nbsp;Generations&nbsp;into&nbsp;a&nbsp;specific&nbsp;format.<br>
+&nbsp;<br>
+The&nbsp;return&nbsp;value&nbsp;is&nbsp;parsed&nbsp;from&nbsp;only&nbsp;the&nbsp;first&nbsp;Generation&nbsp;in&nbsp;the&nbsp;result,&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;assumed&nbsp;to&nbsp;be&nbsp;the&nbsp;highest-likelihood&nbsp;Generation.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result:&nbsp;A&nbsp;list&nbsp;of&nbsp;Generations&nbsp;to&nbsp;be&nbsp;parsed.&nbsp;The&nbsp;Generations&nbsp;are&nbsp;assumed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;be&nbsp;different&nbsp;candidate&nbsp;outputs&nbsp;for&nbsp;a&nbsp;single&nbsp;model&nbsp;input.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;parse&nbsp;the&nbsp;output&nbsp;as&nbsp;a&nbsp;partial&nbsp;result.&nbsp;This&nbsp;is&nbsp;useful<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;parsers&nbsp;that&nbsp;can&nbsp;parse&nbsp;partial&nbsp;results.&nbsp;Default&nbsp;is&nbsp;False.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Structured&nbsp;output.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-dict"><strong>dict</strong></a>(self, **kwargs: 'Any') -&gt; 'dict'</dt><dd><span class="code">Return&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;output&nbsp;parser.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_format_instructions"><strong>get_format_instructions</strong></a>(self) -&gt; 'str'</dt><dd><span class="code">Instructions&nbsp;on&nbsp;how&nbsp;the&nbsp;LLM&nbsp;output&nbsp;should&nbsp;be&nbsp;formatted.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-invoke"><strong>invoke</strong></a>(
+    self,
+    input: 'Union[str, BaseMessage]',
+    config: 'Optional[RunnableConfig]' = None,
+    **kwargs: 'Any'
+) -&gt; 'T'</dt><dd><span class="code">Transform&nbsp;a&nbsp;single&nbsp;input&nbsp;into&nbsp;an&nbsp;output.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;The&nbsp;input&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;invoking&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;config&nbsp;supports&nbsp;standard&nbsp;keys&nbsp;like&nbsp;``'tags'``,&nbsp;``'metadata'``&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tracing&nbsp;purposes,&nbsp;``'max_concurrency'``&nbsp;for&nbsp;controlling&nbsp;how&nbsp;much&nbsp;work&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do&nbsp;in&nbsp;parallel,&nbsp;and&nbsp;other&nbsp;keys.&nbsp;Please&nbsp;refer&nbsp;to&nbsp;the&nbsp;``RunnableConfig``<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;more&nbsp;details.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;output&nbsp;of&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-parse_result"><strong>parse_result</strong></a>(self, result: 'list[Generation]', *, partial: 'bool' = False) -&gt; 'T'</dt><dd><span class="code">Parse&nbsp;a&nbsp;list&nbsp;of&nbsp;candidate&nbsp;model&nbsp;Generations&nbsp;into&nbsp;a&nbsp;specific&nbsp;format.<br>
+&nbsp;<br>
+The&nbsp;return&nbsp;value&nbsp;is&nbsp;parsed&nbsp;from&nbsp;only&nbsp;the&nbsp;first&nbsp;Generation&nbsp;in&nbsp;the&nbsp;result,&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;assumed&nbsp;to&nbsp;be&nbsp;the&nbsp;highest-likelihood&nbsp;Generation.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result:&nbsp;A&nbsp;list&nbsp;of&nbsp;Generations&nbsp;to&nbsp;be&nbsp;parsed.&nbsp;The&nbsp;Generations&nbsp;are&nbsp;assumed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;be&nbsp;different&nbsp;candidate&nbsp;outputs&nbsp;for&nbsp;a&nbsp;single&nbsp;model&nbsp;input.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;parse&nbsp;the&nbsp;output&nbsp;as&nbsp;a&nbsp;partial&nbsp;result.&nbsp;This&nbsp;is&nbsp;useful<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;parsers&nbsp;that&nbsp;can&nbsp;parse&nbsp;partial&nbsp;results.&nbsp;Default&nbsp;is&nbsp;False.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Structured&nbsp;output.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-parse_with_prompt"><strong>parse_with_prompt</strong></a>(self, completion: 'str', prompt: 'PromptValue') -&gt; 'Any'</dt><dd><span class="code">Parse&nbsp;the&nbsp;output&nbsp;of&nbsp;an&nbsp;LLM&nbsp;call&nbsp;with&nbsp;the&nbsp;input&nbsp;prompt&nbsp;for&nbsp;context.<br>
+&nbsp;<br>
+The&nbsp;prompt&nbsp;is&nbsp;largely&nbsp;provided&nbsp;in&nbsp;the&nbsp;event&nbsp;the&nbsp;OutputParser&nbsp;wants<br>
+to&nbsp;retry&nbsp;or&nbsp;fix&nbsp;the&nbsp;output&nbsp;in&nbsp;some&nbsp;way,&nbsp;and&nbsp;needs&nbsp;information&nbsp;from<br>
+the&nbsp;prompt&nbsp;to&nbsp;do&nbsp;so.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;completion:&nbsp;String&nbsp;output&nbsp;of&nbsp;a&nbsp;language&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prompt:&nbsp;Input&nbsp;PromptValue.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Structured&nbsp;output.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="langchain_core.output_parsers.base.html#BaseOutputParser">langchain_core.output_parsers.base.BaseOutputParser</a>:<br>
+<dl><dt><strong>InputType</strong></dt>
+<dd><span class="code">Return&nbsp;the&nbsp;input&nbsp;type&nbsp;for&nbsp;the&nbsp;parser.</span></dd>
+</dl>
+<dl><dt><strong>OutputType</strong></dt>
+<dd><span class="code">Return&nbsp;the&nbsp;output&nbsp;type&nbsp;for&nbsp;the&nbsp;parser.<br>
+&nbsp;<br>
+This&nbsp;property&nbsp;is&nbsp;inferred&nbsp;from&nbsp;the&nbsp;first&nbsp;type&nbsp;argument&nbsp;of&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;TypeError:&nbsp;If&nbsp;the&nbsp;class&nbsp;doesn't&nbsp;have&nbsp;an&nbsp;inferable&nbsp;OutputType.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="langchain_core.output_parsers.base.html#BaseLLMOutputParser">langchain_core.output_parsers.base.BaseLLMOutputParser</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="langchain_core.output_parsers.base.html#BaseLLMOutputParser">langchain_core.output_parsers.base.BaseLLMOutputParser</a>:<br>
+<dl><dt><strong>__orig_bases__</strong> = (&lt;class 'abc.ABC'&gt;, typing.Generic[~T])</dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.runnables.base.html#RunnableSerializable">langchain_core.runnables.base.RunnableSerializable</a>:<br>
+<dl><dt><a name="LineListOutputParser-configurable_alternatives"><strong>configurable_alternatives</strong></a>(
+    self,
+    which: 'ConfigurableField',
+    *,
+    default_key: 'str' = 'default',
+    prefix_keys: 'bool' = False,
+    **kwargs: 'Union[Runnable[Input, Output], Callable[[], Runnable[Input, Output]]]'
+) -&gt; 'RunnableSerializable[Input, Output]'</dt><dd><span class="code">Configure&nbsp;alternatives&nbsp;for&nbsp;``Runnables``&nbsp;that&nbsp;can&nbsp;be&nbsp;set&nbsp;at&nbsp;runtime.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;which:&nbsp;The&nbsp;``ConfigurableField``&nbsp;instance&nbsp;that&nbsp;will&nbsp;be&nbsp;used&nbsp;to&nbsp;select&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alternative.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;default_key:&nbsp;The&nbsp;default&nbsp;key&nbsp;to&nbsp;use&nbsp;if&nbsp;no&nbsp;alternative&nbsp;is&nbsp;selected.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;``'default'``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix_keys:&nbsp;Whether&nbsp;to&nbsp;prefix&nbsp;the&nbsp;keys&nbsp;with&nbsp;the&nbsp;``ConfigurableField``&nbsp;id.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**kwargs:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;keys&nbsp;to&nbsp;``Runnable``&nbsp;instances&nbsp;or&nbsp;callables&nbsp;that<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;``Runnable``&nbsp;instances.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;with&nbsp;the&nbsp;alternatives&nbsp;configured.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_anthropic&nbsp;import&nbsp;ChatAnthropic<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables.utils&nbsp;import&nbsp;ConfigurableField<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_openai&nbsp;import&nbsp;ChatOpenAI<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;model&nbsp;=&nbsp;ChatAnthropic(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model_name="claude-3-7-sonnet-20250219"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;).<a href="#LineListOutputParser-configurable_alternatives">configurable_alternatives</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ConfigurableField(id="llm"),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default_key="anthropic",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;openai=ChatOpenAI()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;uses&nbsp;the&nbsp;default&nbsp;model&nbsp;ChatAnthropic<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(model.<a href="#LineListOutputParser-invoke">invoke</a>("which&nbsp;organization&nbsp;created&nbsp;you?").content)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;uses&nbsp;ChatOpenAI<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model.<a href="#LineListOutputParser-with_config">with_config</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;configurable={"llm":&nbsp;"openai"}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<a href="#LineListOutputParser-invoke">invoke</a>("which&nbsp;organization&nbsp;created&nbsp;you?").content<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-configurable_fields"><strong>configurable_fields</strong></a>(self, **kwargs: 'AnyConfigurableField') -&gt; 'RunnableSerializable[Input, Output]'</dt><dd><span class="code">Configure&nbsp;particular&nbsp;``Runnable``&nbsp;fields&nbsp;at&nbsp;runtime.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**kwargs:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;``ConfigurableField``&nbsp;instances&nbsp;to&nbsp;configure.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;with&nbsp;the&nbsp;fields&nbsp;configured.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;ConfigurableField<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_openai&nbsp;import&nbsp;ChatOpenAI<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;model&nbsp;=&nbsp;ChatOpenAI(max_tokens=20).<a href="#LineListOutputParser-configurable_fields">configurable_fields</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max_tokens=ConfigurableField(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="output_token_number",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="Max&nbsp;tokens&nbsp;in&nbsp;the&nbsp;output",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description="The&nbsp;maximum&nbsp;number&nbsp;of&nbsp;tokens&nbsp;in&nbsp;the&nbsp;output",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;max_tokens&nbsp;=&nbsp;20<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"max_tokens_20:&nbsp;",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model.<a href="#LineListOutputParser-invoke">invoke</a>("tell&nbsp;me&nbsp;something&nbsp;about&nbsp;chess").content<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;max_tokens&nbsp;=&nbsp;200<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print("max_tokens_200:&nbsp;",&nbsp;model.<a href="#LineListOutputParser-with_config">with_config</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;configurable={"output_token_number":&nbsp;200}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<a href="#LineListOutputParser-invoke">invoke</a>("tell&nbsp;me&nbsp;something&nbsp;about&nbsp;chess").content<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-to_json"><strong>to_json</strong></a>(self) -&gt; 'Union[SerializedConstructor, SerializedNotImplemented]'</dt><dd><span class="code">Serialize&nbsp;the&nbsp;``Runnable``&nbsp;to&nbsp;JSON.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;JSON-serializable&nbsp;representation&nbsp;of&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.load.serializable.html#Serializable">langchain_core.load.serializable.Serializable</a>:<br>
+<dl><dt><a name="LineListOutputParser-__init__"><strong>__init__</strong></a>(self, *args: Any, **kwargs: Any) -&gt; None</dt><dd><span class="code">#&nbsp;Remove&nbsp;default&nbsp;BaseModel&nbsp;init&nbsp;docstring.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__repr_args__"><strong>__repr_args__</strong></a>(self) -&gt; Any</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-to_json_not_implemented"><strong>to_json_not_implemented</strong></a>(self) -&gt; langchain_core.load.serializable.SerializedNotImplemented</dt><dd><span class="code">Serialize&nbsp;a&nbsp;"not&nbsp;implemented"&nbsp;object.</span></dd></dl>
+
+<hr>
+Class methods inherited from <a href="langchain_core.load.serializable.html#Serializable">langchain_core.load.serializable.Serializable</a>:<br>
+<dl><dt><a name="LineListOutputParser-get_lc_namespace"><strong>get_lc_namespace</strong></a>() -&gt; list[str]</dt><dd><span class="code">Get&nbsp;the&nbsp;namespace&nbsp;of&nbsp;the&nbsp;langchain&nbsp;object.<br>
+&nbsp;<br>
+For&nbsp;example,&nbsp;if&nbsp;the&nbsp;class&nbsp;is&nbsp;`langchain.llms.openai.OpenAI`,&nbsp;then&nbsp;the<br>
+namespace&nbsp;is&nbsp;["langchain",&nbsp;"llms",&nbsp;"openai"]</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-is_lc_serializable"><strong>is_lc_serializable</strong></a>() -&gt; bool</dt><dd><span class="code">Is&nbsp;this&nbsp;class&nbsp;serializable?<br>
+&nbsp;<br>
+By&nbsp;design,&nbsp;even&nbsp;if&nbsp;a&nbsp;class&nbsp;inherits&nbsp;from&nbsp;Serializable,&nbsp;it&nbsp;is&nbsp;not&nbsp;serializable&nbsp;by<br>
+default.&nbsp;This&nbsp;is&nbsp;to&nbsp;prevent&nbsp;accidental&nbsp;serialization&nbsp;of&nbsp;objects&nbsp;that&nbsp;should&nbsp;not<br>
+be&nbsp;serialized.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Whether&nbsp;the&nbsp;class&nbsp;is&nbsp;serializable.&nbsp;Default&nbsp;is&nbsp;False.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-lc_id"><strong>lc_id</strong></a>() -&gt; list[str]</dt><dd><span class="code">A&nbsp;unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;class&nbsp;for&nbsp;serialization&nbsp;purposes.<br>
+&nbsp;<br>
+The&nbsp;unique&nbsp;identifier&nbsp;is&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;that&nbsp;describes&nbsp;the&nbsp;path<br>
+to&nbsp;the&nbsp;object.<br>
+For&nbsp;example,&nbsp;for&nbsp;the&nbsp;class&nbsp;`langchain.llms.openai.OpenAI`,&nbsp;the&nbsp;id&nbsp;is<br>
+["langchain",&nbsp;"llms",&nbsp;"openai",&nbsp;"OpenAI"].</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="langchain_core.load.serializable.html#Serializable">langchain_core.load.serializable.Serializable</a>:<br>
+<dl><dt><strong>lc_attributes</strong></dt>
+<dd><span class="code">List&nbsp;of&nbsp;attribute&nbsp;names&nbsp;that&nbsp;should&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;serialized&nbsp;kwargs.<br>
+&nbsp;<br>
+These&nbsp;attributes&nbsp;must&nbsp;be&nbsp;accepted&nbsp;by&nbsp;the&nbsp;constructor.<br>
+Default&nbsp;is&nbsp;an&nbsp;empty&nbsp;dictionary.</span></dd>
+</dl>
+<dl><dt><strong>lc_secrets</strong></dt>
+<dd><span class="code">A&nbsp;map&nbsp;of&nbsp;constructor&nbsp;argument&nbsp;names&nbsp;to&nbsp;secret&nbsp;ids.<br>
+&nbsp;<br>
+For&nbsp;example,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{"openai_api_key":&nbsp;"OPENAI_API_KEY"}</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><a name="LineListOutputParser-__copy__"><strong>__copy__</strong></a>(self) -&gt; 'Self'</dt><dd><span class="code">Returns&nbsp;a&nbsp;shallow&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__deepcopy__"><strong>__deepcopy__</strong></a>(self, memo: 'dict[int, Any] | None' = None) -&gt; 'Self'</dt><dd><span class="code">Returns&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__delattr__"><strong>__delattr__</strong></a>(self, item: 'str') -&gt; 'Any'</dt><dd><span class="code">Implement&nbsp;delattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__eq__"><strong>__eq__</strong></a>(self, other: 'Any') -&gt; 'bool'</dt><dd><span class="code">Return&nbsp;self==value.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__getattr__"><strong>__getattr__</strong></a>(self, item: 'str') -&gt; 'Any'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-__getstate__"><strong>__getstate__</strong></a>(self) -&gt; 'dict[Any, Any]'</dt><dd><span class="code">Helper&nbsp;for&nbsp;pickle.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__iter__"><strong>__iter__</strong></a>(self) -&gt; 'TupleGenerator'</dt><dd><span class="code">So&nbsp;`<a href="#LineListOutputParser-dict">dict</a>(model)`&nbsp;works.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__pretty__"><strong>__pretty__</strong></a>(self, fmt: 'typing.Callable[[Any], Any]', **kwargs: 'Any') -&gt; 'typing.Generator[Any, None, None]'<span class="grey"><span class="heading-text"> from pydantic._internal._repr.Representation</span></span></dt><dd><span class="code">Used&nbsp;by&nbsp;devtools&nbsp;(<a href="https://python-devtools.helpmanual.io/">https://python-devtools.helpmanual.io/</a>)&nbsp;to&nbsp;pretty&nbsp;print&nbsp;objects.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__replace__"><strong>__replace__</strong></a>(self, **changes: 'Any') -&gt; 'Self'</dt><dd><span class="code">#&nbsp;Because&nbsp;we&nbsp;make&nbsp;use&nbsp;of&nbsp;`@dataclass_transform()`,&nbsp;`__replace__`&nbsp;is&nbsp;already&nbsp;synthesized&nbsp;by<br>
+#&nbsp;type&nbsp;checkers,&nbsp;so&nbsp;we&nbsp;define&nbsp;the&nbsp;implementation&nbsp;in&nbsp;this&nbsp;`if&nbsp;not&nbsp;TYPE_CHECKING:`&nbsp;block:</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__repr__"><strong>__repr__</strong></a>(self) -&gt; 'str'</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__repr_name__"><strong>__repr_name__</strong></a>(self) -&gt; 'str'<span class="grey"><span class="heading-text"> from pydantic._internal._repr.Representation</span></span></dt><dd><span class="code">Name&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class,&nbsp;used&nbsp;in&nbsp;__repr__.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__repr_recursion__"><strong>__repr_recursion__</strong></a>(self, object: 'Any') -&gt; 'str'<span class="grey"><span class="heading-text"> from pydantic._internal._repr.Representation</span></span></dt><dd><span class="code">Returns&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;a&nbsp;recursive&nbsp;object.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__repr_str__"><strong>__repr_str__</strong></a>(self, join_str: 'str') -&gt; 'str'<span class="grey"><span class="heading-text"> from pydantic._internal._repr.Representation</span></span></dt></dl>
+
+<dl><dt><a name="LineListOutputParser-__rich_repr__"><strong>__rich_repr__</strong></a>(self) -&gt; 'RichReprResult'<span class="grey"><span class="heading-text"> from pydantic._internal._repr.Representation</span></span></dt><dd><span class="code">Used&nbsp;by&nbsp;Rich&nbsp;(<a href="https://rich.readthedocs.io/en/stable/pretty.html">https://rich.readthedocs.io/en/stable/pretty.html</a>)&nbsp;to&nbsp;pretty&nbsp;print&nbsp;objects.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__setattr__"><strong>__setattr__</strong></a>(self, name: 'str', value: 'Any') -&gt; 'None'</dt><dd><span class="code">Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__setstate__"><strong>__setstate__</strong></a>(self, state: 'dict[Any, Any]') -&gt; 'None'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-__str__"><strong>__str__</strong></a>(self) -&gt; 'str'</dt><dd><span class="code">Return&nbsp;str(self).</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-copy"><strong>copy</strong></a>(
+    self,
+    *,
+    include: 'AbstractSetIntStr | MappingIntStrAny | None' = None,
+    exclude: 'AbstractSetIntStr | MappingIntStrAny | None' = None,
+    update: 'Dict[str, Any] | None' = None,
+    deep: 'bool' = False
+) -&gt; 'Self'</dt><dd><span class="code">Returns&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+!!!&nbsp;warning&nbsp;"Deprecated"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;is&nbsp;now&nbsp;deprecated;&nbsp;use&nbsp;`model_copy`&nbsp;instead.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;need&nbsp;`include`&nbsp;or&nbsp;`exclude`,&nbsp;use:<br>
+&nbsp;<br>
+```python&nbsp;{test="skip"&nbsp;lint="skip"}<br>
+data&nbsp;=&nbsp;self.<a href="#LineListOutputParser-model_dump">model_dump</a>(include=include,&nbsp;exclude=exclude,&nbsp;round_trip=True)<br>
+data&nbsp;=&nbsp;{**data,&nbsp;**(update&nbsp;or&nbsp;{})}<br>
+copied&nbsp;=&nbsp;self.<a href="#LineListOutputParser-model_validate">model_validate</a>(data)<br>
+```<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;Optional&nbsp;set&nbsp;or&nbsp;mapping&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;copied&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude:&nbsp;Optional&nbsp;set&nbsp;or&nbsp;mapping&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;in&nbsp;the&nbsp;copied&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;update:&nbsp;Optional&nbsp;dictionary&nbsp;of&nbsp;field-value&nbsp;pairs&nbsp;to&nbsp;override&nbsp;field&nbsp;values&nbsp;in&nbsp;the&nbsp;copied&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deep:&nbsp;If&nbsp;True,&nbsp;the&nbsp;values&nbsp;of&nbsp;fields&nbsp;that&nbsp;are&nbsp;Pydantic&nbsp;models&nbsp;will&nbsp;be&nbsp;deep-copied.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;copy&nbsp;of&nbsp;the&nbsp;model&nbsp;with&nbsp;included,&nbsp;excluded&nbsp;and&nbsp;updated&nbsp;fields&nbsp;as&nbsp;specified.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-json"><strong>json</strong></a>(
+    self,
+    *,
+    include: 'IncEx | None' = None,
+    exclude: 'IncEx | None' = None,
+    by_alias: 'bool' = False,
+    exclude_unset: 'bool' = False,
+    exclude_defaults: 'bool' = False,
+    exclude_none: 'bool' = False,
+    encoder: 'Callable[[Any], Any] | None' = PydanticUndefined,
+    models_as_dict: 'bool' = PydanticUndefined,
+    **dumps_kwargs: 'Any'
+) -&gt; 'str'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-model_copy"><strong>model_copy</strong></a>(
+    self,
+    *,
+    update: 'Mapping[str, Any] | None' = None,
+    deep: 'bool' = False
+) -&gt; 'Self'</dt><dd><span class="code">!!!&nbsp;abstract&nbsp;"Usage&nbsp;Documentation"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[`model_copy`](../concepts/serialization.md#model_copy)<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+!!!&nbsp;note<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;underlying&nbsp;instance's&nbsp;[`__dict__`][object.__dict__]&nbsp;attribute&nbsp;is&nbsp;copied.&nbsp;This<br>
+&nbsp;&nbsp;&nbsp;&nbsp;might&nbsp;have&nbsp;unexpected&nbsp;side&nbsp;effects&nbsp;if&nbsp;you&nbsp;store&nbsp;anything&nbsp;in&nbsp;it,&nbsp;on&nbsp;top&nbsp;of&nbsp;the&nbsp;model<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;(e.g.&nbsp;the&nbsp;value&nbsp;of&nbsp;[cached&nbsp;properties][functools.cached_property]).<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;update:&nbsp;Values&nbsp;to&nbsp;change/add&nbsp;in&nbsp;the&nbsp;new&nbsp;model.&nbsp;Note:&nbsp;the&nbsp;data&nbsp;is&nbsp;not&nbsp;validated<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;before&nbsp;creating&nbsp;the&nbsp;new&nbsp;model.&nbsp;You&nbsp;should&nbsp;trust&nbsp;this&nbsp;data.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deep:&nbsp;Set&nbsp;to&nbsp;`True`&nbsp;to&nbsp;make&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;New&nbsp;model&nbsp;instance.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_dump"><strong>model_dump</strong></a>(
+    self,
+    *,
+    mode: "Literal['json', 'python'] | str" = 'python',
+    include: 'IncEx | None' = None,
+    exclude: 'IncEx | None' = None,
+    context: 'Any | None' = None,
+    by_alias: 'bool | None' = None,
+    exclude_unset: 'bool' = False,
+    exclude_defaults: 'bool' = False,
+    exclude_none: 'bool' = False,
+    round_trip: 'bool' = False,
+    warnings: "bool | Literal['none', 'warn', 'error']" = True,
+    fallback: 'Callable[[Any], Any] | None' = None,
+    serialize_as_any: 'bool' = False
+) -&gt; 'dict[str, Any]'</dt><dd><span class="code">!!!&nbsp;abstract&nbsp;"Usage&nbsp;Documentation"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[`model_dump`](../concepts/serialization.md#modelmodel_dump)<br>
+&nbsp;<br>
+Generate&nbsp;a&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;model,&nbsp;optionally&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;include&nbsp;or&nbsp;exclude.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mode:&nbsp;The&nbsp;mode&nbsp;in&nbsp;which&nbsp;`to_python`&nbsp;should&nbsp;run.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;mode&nbsp;is&nbsp;'json',&nbsp;the&nbsp;output&nbsp;will&nbsp;only&nbsp;contain&nbsp;JSON&nbsp;serializable&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;mode&nbsp;is&nbsp;'python',&nbsp;the&nbsp;output&nbsp;may&nbsp;contain&nbsp;non-JSON-serializable&nbsp;Python&nbsp;objects.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;A&nbsp;set&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude:&nbsp;A&nbsp;set&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;the&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Additional&nbsp;context&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;serializer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;the&nbsp;field's&nbsp;alias&nbsp;in&nbsp;the&nbsp;dictionary&nbsp;key&nbsp;if&nbsp;defined.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_unset:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;have&nbsp;not&nbsp;been&nbsp;explicitly&nbsp;set.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_defaults:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;are&nbsp;set&nbsp;to&nbsp;their&nbsp;default&nbsp;value.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_none:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;have&nbsp;a&nbsp;value&nbsp;of&nbsp;`None`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;round_trip:&nbsp;If&nbsp;True,&nbsp;dumped&nbsp;values&nbsp;should&nbsp;be&nbsp;valid&nbsp;as&nbsp;input&nbsp;for&nbsp;non-idempotent&nbsp;types&nbsp;such&nbsp;as&nbsp;Json[T].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;warnings:&nbsp;How&nbsp;to&nbsp;handle&nbsp;serialization&nbsp;errors.&nbsp;False/"none"&nbsp;ignores&nbsp;them,&nbsp;True/"warn"&nbsp;logs&nbsp;errors,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"error"&nbsp;raises&nbsp;a&nbsp;[`PydanticSerializationError`][pydantic_core.PydanticSerializationError].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fallback:&nbsp;A&nbsp;function&nbsp;to&nbsp;call&nbsp;when&nbsp;an&nbsp;unknown&nbsp;value&nbsp;is&nbsp;encountered.&nbsp;If&nbsp;not&nbsp;provided,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;[`PydanticSerializationError`][pydantic_core.PydanticSerializationError]&nbsp;error&nbsp;is&nbsp;raised.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;serialize_as_any:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;fields&nbsp;with&nbsp;duck-typing&nbsp;serialization&nbsp;behavior.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;model.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_dump_json"><strong>model_dump_json</strong></a>(
+    self,
+    *,
+    indent: 'int | None' = None,
+    include: 'IncEx | None' = None,
+    exclude: 'IncEx | None' = None,
+    context: 'Any | None' = None,
+    by_alias: 'bool | None' = None,
+    exclude_unset: 'bool' = False,
+    exclude_defaults: 'bool' = False,
+    exclude_none: 'bool' = False,
+    round_trip: 'bool' = False,
+    warnings: "bool | Literal['none', 'warn', 'error']" = True,
+    fallback: 'Callable[[Any], Any] | None' = None,
+    serialize_as_any: 'bool' = False
+) -&gt; 'str'</dt><dd><span class="code">!!!&nbsp;abstract&nbsp;"Usage&nbsp;Documentation"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[`model_dump_json`](../concepts/serialization.md#modelmodel_dump_json)<br>
+&nbsp;<br>
+Generates&nbsp;a&nbsp;JSON&nbsp;representation&nbsp;of&nbsp;the&nbsp;model&nbsp;using&nbsp;Pydantic's&nbsp;`to_json`&nbsp;method.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;indent:&nbsp;Indentation&nbsp;to&nbsp;use&nbsp;in&nbsp;the&nbsp;JSON&nbsp;output.&nbsp;If&nbsp;None&nbsp;is&nbsp;passed,&nbsp;the&nbsp;output&nbsp;will&nbsp;be&nbsp;compact.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;Field(s)&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;JSON&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude:&nbsp;Field(s)&nbsp;to&nbsp;exclude&nbsp;from&nbsp;the&nbsp;JSON&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Additional&nbsp;context&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;serializer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;using&nbsp;field&nbsp;aliases.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_unset:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;have&nbsp;not&nbsp;been&nbsp;explicitly&nbsp;set.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_defaults:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;are&nbsp;set&nbsp;to&nbsp;their&nbsp;default&nbsp;value.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_none:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;have&nbsp;a&nbsp;value&nbsp;of&nbsp;`None`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;round_trip:&nbsp;If&nbsp;True,&nbsp;dumped&nbsp;values&nbsp;should&nbsp;be&nbsp;valid&nbsp;as&nbsp;input&nbsp;for&nbsp;non-idempotent&nbsp;types&nbsp;such&nbsp;as&nbsp;Json[T].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;warnings:&nbsp;How&nbsp;to&nbsp;handle&nbsp;serialization&nbsp;errors.&nbsp;False/"none"&nbsp;ignores&nbsp;them,&nbsp;True/"warn"&nbsp;logs&nbsp;errors,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"error"&nbsp;raises&nbsp;a&nbsp;[`PydanticSerializationError`][pydantic_core.PydanticSerializationError].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fallback:&nbsp;A&nbsp;function&nbsp;to&nbsp;call&nbsp;when&nbsp;an&nbsp;unknown&nbsp;value&nbsp;is&nbsp;encountered.&nbsp;If&nbsp;not&nbsp;provided,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;[`PydanticSerializationError`][pydantic_core.PydanticSerializationError]&nbsp;error&nbsp;is&nbsp;raised.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;serialize_as_any:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;fields&nbsp;with&nbsp;duck-typing&nbsp;serialization&nbsp;behavior.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;JSON&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;model.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_post_init"><strong>model_post_init</strong></a>(self, context: 'Any', /) -&gt; 'None'</dt><dd><span class="code">Override&nbsp;this&nbsp;method&nbsp;to&nbsp;perform&nbsp;additional&nbsp;initialization&nbsp;after&nbsp;`__init__`&nbsp;and&nbsp;`model_construct`.<br>
+This&nbsp;is&nbsp;useful&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;do&nbsp;some&nbsp;validation&nbsp;that&nbsp;requires&nbsp;the&nbsp;entire&nbsp;model&nbsp;to&nbsp;be&nbsp;initialized.</span></dd></dl>
+
+<hr>
+Class methods inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><a name="LineListOutputParser-__class_getitem__"><strong>__class_getitem__</strong></a>(typevar_values: 'type[Any] | tuple[type[Any], ...]') -&gt; 'type[BaseModel] | _forward_ref.PydanticRecursiveRef'</dt><dd><span class="code">Parameterizes&nbsp;a&nbsp;generic&nbsp;class.<br>
+&nbsp;<br>
+At&nbsp;least,&nbsp;parameterizing&nbsp;a&nbsp;generic&nbsp;class&nbsp;is&nbsp;the&nbsp;*main*&nbsp;thing&nbsp;this<br>
+method&nbsp;does.&nbsp;For&nbsp;example,&nbsp;for&nbsp;some&nbsp;generic&nbsp;class&nbsp;`Foo`,&nbsp;this&nbsp;is&nbsp;called<br>
+when&nbsp;we&nbsp;do&nbsp;`Foo[int]`&nbsp;-&nbsp;there,&nbsp;with&nbsp;`cls=Foo`&nbsp;and&nbsp;`params=int`.<br>
+&nbsp;<br>
+However,&nbsp;note&nbsp;that&nbsp;this&nbsp;method&nbsp;is&nbsp;also&nbsp;called&nbsp;when&nbsp;defining&nbsp;generic<br>
+classes&nbsp;in&nbsp;the&nbsp;first&nbsp;place&nbsp;with&nbsp;`class&nbsp;Foo[T]:&nbsp;...`.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__get_pydantic_core_schema__"><strong>__get_pydantic_core_schema__</strong></a>(
+    source: 'type[BaseModel]',
+    handler: 'GetCoreSchemaHandler',
+    /
+) -&gt; 'CoreSchema'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-__get_pydantic_json_schema__"><strong>__get_pydantic_json_schema__</strong></a>(
+    core_schema: 'CoreSchema',
+    handler: 'GetJsonSchemaHandler',
+    /
+) -&gt; 'JsonSchemaValue'</dt><dd><span class="code">Hook&nbsp;into&nbsp;generating&nbsp;the&nbsp;model's&nbsp;JSON&nbsp;schema.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;core_schema:&nbsp;A&nbsp;`pydantic-core`&nbsp;CoreSchema.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;can&nbsp;ignore&nbsp;this&nbsp;argument&nbsp;and&nbsp;call&nbsp;the&nbsp;handler&nbsp;with&nbsp;a&nbsp;new&nbsp;CoreSchema,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wrap&nbsp;this&nbsp;CoreSchema&nbsp;(`{'type':&nbsp;'nullable',&nbsp;'schema':&nbsp;current_schema}`),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;just&nbsp;call&nbsp;the&nbsp;handler&nbsp;with&nbsp;the&nbsp;original&nbsp;schema.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;handler:&nbsp;Call&nbsp;into&nbsp;Pydantic's&nbsp;internal&nbsp;JSON&nbsp;schema&nbsp;generation.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;will&nbsp;raise&nbsp;a&nbsp;`pydantic.errors.PydanticInvalidForJsonSchema`&nbsp;if&nbsp;JSON&nbsp;schema<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generation&nbsp;fails.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since&nbsp;this&nbsp;gets&nbsp;called&nbsp;by&nbsp;`BaseModel.model_json_schema`&nbsp;you&nbsp;can&nbsp;override&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`schema_generator`&nbsp;argument&nbsp;to&nbsp;that&nbsp;function&nbsp;to&nbsp;change&nbsp;JSON&nbsp;schema&nbsp;generation&nbsp;globally<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;a&nbsp;type.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;JSON&nbsp;schema,&nbsp;as&nbsp;a&nbsp;Python&nbsp;object.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__pydantic_init_subclass__"><strong>__pydantic_init_subclass__</strong></a>(**kwargs: 'Any') -&gt; 'None'</dt><dd><span class="code">This&nbsp;is&nbsp;intended&nbsp;to&nbsp;behave&nbsp;just&nbsp;like&nbsp;`__init_subclass__`,&nbsp;but&nbsp;is&nbsp;called&nbsp;by&nbsp;`ModelMetaclass`<br>
+only&nbsp;after&nbsp;the&nbsp;class&nbsp;is&nbsp;actually&nbsp;fully&nbsp;initialized.&nbsp;In&nbsp;particular,&nbsp;attributes&nbsp;like&nbsp;`model_fields`&nbsp;will<br>
+be&nbsp;present&nbsp;when&nbsp;this&nbsp;is&nbsp;called.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;necessary&nbsp;because&nbsp;`__init_subclass__`&nbsp;will&nbsp;always&nbsp;be&nbsp;called&nbsp;by&nbsp;`type.__new__`,<br>
+and&nbsp;it&nbsp;would&nbsp;require&nbsp;a&nbsp;prohibitively&nbsp;large&nbsp;refactor&nbsp;to&nbsp;the&nbsp;`ModelMetaclass`&nbsp;to&nbsp;ensure&nbsp;that<br>
+`type.__new__`&nbsp;was&nbsp;called&nbsp;in&nbsp;such&nbsp;a&nbsp;manner&nbsp;that&nbsp;the&nbsp;class&nbsp;would&nbsp;already&nbsp;be&nbsp;sufficiently&nbsp;initialized.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;receive&nbsp;the&nbsp;same&nbsp;`kwargs`&nbsp;that&nbsp;would&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;standard&nbsp;`__init_subclass__`,&nbsp;namely,<br>
+any&nbsp;kwargs&nbsp;passed&nbsp;to&nbsp;the&nbsp;class&nbsp;definition&nbsp;that&nbsp;aren't&nbsp;used&nbsp;internally&nbsp;by&nbsp;pydantic.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**kwargs:&nbsp;Any&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;to&nbsp;the&nbsp;class&nbsp;definition&nbsp;that&nbsp;aren't&nbsp;used&nbsp;internally<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;pydantic.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-construct"><strong>construct</strong></a>(_fields_set: 'set[str] | None' = None, **values: 'Any') -&gt; 'Self'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-from_orm"><strong>from_orm</strong></a>(obj: 'Any') -&gt; 'Self'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-model_construct"><strong>model_construct</strong></a>(_fields_set: 'set[str] | None' = None, **values: 'Any') -&gt; 'Self'</dt><dd><span class="code">Creates&nbsp;a&nbsp;new&nbsp;instance&nbsp;of&nbsp;the&nbsp;`Model`&nbsp;class&nbsp;with&nbsp;validated&nbsp;data.<br>
+&nbsp;<br>
+Creates&nbsp;a&nbsp;new&nbsp;model&nbsp;setting&nbsp;`__dict__`&nbsp;and&nbsp;`__pydantic_fields_set__`&nbsp;from&nbsp;trusted&nbsp;or&nbsp;pre-validated&nbsp;data.<br>
+Default&nbsp;values&nbsp;are&nbsp;respected,&nbsp;but&nbsp;no&nbsp;other&nbsp;validation&nbsp;is&nbsp;performed.<br>
+&nbsp;<br>
+!!!&nbsp;note<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`<a href="#LineListOutputParser-model_construct">model_construct</a>()`&nbsp;generally&nbsp;respects&nbsp;the&nbsp;`model_config.extra`&nbsp;setting&nbsp;on&nbsp;the&nbsp;provided&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;That&nbsp;is,&nbsp;if&nbsp;`model_config.extra&nbsp;==&nbsp;'allow'`,&nbsp;then&nbsp;all&nbsp;extra&nbsp;passed&nbsp;values&nbsp;are&nbsp;added&nbsp;to&nbsp;the&nbsp;model&nbsp;instance's&nbsp;`__dict__`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;`__pydantic_extra__`&nbsp;fields.&nbsp;If&nbsp;`model_config.extra&nbsp;==&nbsp;'ignore'`&nbsp;(the&nbsp;default),&nbsp;then&nbsp;all&nbsp;extra&nbsp;passed&nbsp;values&nbsp;are&nbsp;ignored.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Because&nbsp;no&nbsp;validation&nbsp;is&nbsp;performed&nbsp;with&nbsp;a&nbsp;call&nbsp;to&nbsp;`<a href="#LineListOutputParser-model_construct">model_construct</a>()`,&nbsp;having&nbsp;`model_config.extra&nbsp;==&nbsp;'forbid'`&nbsp;does&nbsp;not&nbsp;result&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;an&nbsp;error&nbsp;if&nbsp;extra&nbsp;values&nbsp;are&nbsp;passed,&nbsp;but&nbsp;they&nbsp;will&nbsp;be&nbsp;ignored.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_fields_set:&nbsp;A&nbsp;set&nbsp;of&nbsp;field&nbsp;names&nbsp;that&nbsp;were&nbsp;originally&nbsp;explicitly&nbsp;set&nbsp;during&nbsp;instantiation.&nbsp;If&nbsp;provided,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this&nbsp;is&nbsp;directly&nbsp;used&nbsp;for&nbsp;the&nbsp;[`model_fields_set`][pydantic.BaseModel.model_fields_set]&nbsp;attribute.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Otherwise,&nbsp;the&nbsp;field&nbsp;names&nbsp;from&nbsp;the&nbsp;`values`&nbsp;argument&nbsp;will&nbsp;be&nbsp;used.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;values:&nbsp;Trusted&nbsp;or&nbsp;pre-validated&nbsp;data&nbsp;dictionary.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;instance&nbsp;of&nbsp;the&nbsp;`Model`&nbsp;class&nbsp;with&nbsp;validated&nbsp;data.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_json_schema"><strong>model_json_schema</strong></a>(
+    by_alias: 'bool' = True,
+    ref_template: 'str' = '#/$defs/{model}',
+    schema_generator: 'type[GenerateJsonSchema]' = &lt;class 'pydantic.json_schema.GenerateJsonSchema'&gt;,
+    mode: 'JsonSchemaMode' = 'validation'
+) -&gt; 'dict[str, Any]'</dt><dd><span class="code">Generates&nbsp;a&nbsp;JSON&nbsp;schema&nbsp;for&nbsp;a&nbsp;model&nbsp;class.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;attribute&nbsp;aliases&nbsp;or&nbsp;not.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ref_template:&nbsp;The&nbsp;reference&nbsp;template.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;schema_generator:&nbsp;To&nbsp;override&nbsp;the&nbsp;logic&nbsp;used&nbsp;to&nbsp;generate&nbsp;the&nbsp;JSON&nbsp;schema,&nbsp;as&nbsp;a&nbsp;subclass&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`GenerateJsonSchema`&nbsp;with&nbsp;your&nbsp;desired&nbsp;modifications<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mode:&nbsp;The&nbsp;mode&nbsp;in&nbsp;which&nbsp;to&nbsp;generate&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;JSON&nbsp;schema&nbsp;for&nbsp;the&nbsp;given&nbsp;model&nbsp;class.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_parametrized_name"><strong>model_parametrized_name</strong></a>(params: 'tuple[type[Any], ...]') -&gt; 'str'</dt><dd><span class="code">Compute&nbsp;the&nbsp;class&nbsp;name&nbsp;for&nbsp;parametrizations&nbsp;of&nbsp;generic&nbsp;classes.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;can&nbsp;be&nbsp;overridden&nbsp;to&nbsp;achieve&nbsp;a&nbsp;custom&nbsp;naming&nbsp;scheme&nbsp;for&nbsp;generic&nbsp;BaseModels.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;params:&nbsp;Tuple&nbsp;of&nbsp;types&nbsp;of&nbsp;the&nbsp;class.&nbsp;Given&nbsp;a&nbsp;generic&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Model`&nbsp;with&nbsp;2&nbsp;type&nbsp;variables&nbsp;and&nbsp;a&nbsp;concrete&nbsp;model&nbsp;`Model[str,&nbsp;int]`,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;value&nbsp;`(str,&nbsp;int)`&nbsp;would&nbsp;be&nbsp;passed&nbsp;to&nbsp;`params`.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;representing&nbsp;the&nbsp;new&nbsp;class&nbsp;where&nbsp;`params`&nbsp;are&nbsp;passed&nbsp;to&nbsp;`cls`&nbsp;as&nbsp;type&nbsp;variables.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;TypeError:&nbsp;Raised&nbsp;when&nbsp;trying&nbsp;to&nbsp;generate&nbsp;concrete&nbsp;names&nbsp;for&nbsp;non-generic&nbsp;models.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_rebuild"><strong>model_rebuild</strong></a>(
+    *,
+    force: 'bool' = False,
+    raise_errors: 'bool' = True,
+    _parent_namespace_depth: 'int' = 2,
+    _types_namespace: 'MappingNamespace | None' = None
+) -&gt; 'bool | None'</dt><dd><span class="code">Try&nbsp;to&nbsp;rebuild&nbsp;the&nbsp;pydantic-core&nbsp;schema&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+This&nbsp;may&nbsp;be&nbsp;necessary&nbsp;when&nbsp;one&nbsp;of&nbsp;the&nbsp;annotations&nbsp;is&nbsp;a&nbsp;ForwardRef&nbsp;which&nbsp;could&nbsp;not&nbsp;be&nbsp;resolved&nbsp;during<br>
+the&nbsp;initial&nbsp;attempt&nbsp;to&nbsp;build&nbsp;the&nbsp;schema,&nbsp;and&nbsp;automatic&nbsp;rebuilding&nbsp;fails.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;force:&nbsp;Whether&nbsp;to&nbsp;force&nbsp;the&nbsp;rebuilding&nbsp;of&nbsp;the&nbsp;model&nbsp;schema,&nbsp;defaults&nbsp;to&nbsp;`False`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;raise_errors:&nbsp;Whether&nbsp;to&nbsp;raise&nbsp;errors,&nbsp;defaults&nbsp;to&nbsp;`True`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_parent_namespace_depth:&nbsp;The&nbsp;depth&nbsp;level&nbsp;of&nbsp;the&nbsp;parent&nbsp;namespace,&nbsp;defaults&nbsp;to&nbsp;2.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_types_namespace:&nbsp;The&nbsp;types&nbsp;namespace,&nbsp;defaults&nbsp;to&nbsp;`None`.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;`None`&nbsp;if&nbsp;the&nbsp;schema&nbsp;is&nbsp;already&nbsp;"complete"&nbsp;and&nbsp;rebuilding&nbsp;was&nbsp;not&nbsp;required.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;rebuilding&nbsp;_was_&nbsp;required,&nbsp;returns&nbsp;`True`&nbsp;if&nbsp;rebuilding&nbsp;was&nbsp;successful,&nbsp;otherwise&nbsp;`False`.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_validate"><strong>model_validate</strong></a>(
+    obj: 'Any',
+    *,
+    strict: 'bool | None' = None,
+    from_attributes: 'bool | None' = None,
+    context: 'Any | None' = None,
+    by_alias: 'bool | None' = None,
+    by_name: 'bool | None' = None
+) -&gt; 'Self'</dt><dd><span class="code">Validate&nbsp;a&nbsp;pydantic&nbsp;model&nbsp;instance.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;validate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;strict:&nbsp;Whether&nbsp;to&nbsp;enforce&nbsp;types&nbsp;strictly.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from_attributes:&nbsp;Whether&nbsp;to&nbsp;extract&nbsp;data&nbsp;from&nbsp;object&nbsp;attributes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Additional&nbsp;context&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;validator.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;the&nbsp;field's&nbsp;alias&nbsp;when&nbsp;validating&nbsp;against&nbsp;the&nbsp;provided&nbsp;input&nbsp;data.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_name:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;the&nbsp;field's&nbsp;name&nbsp;when&nbsp;validating&nbsp;against&nbsp;the&nbsp;provided&nbsp;input&nbsp;data.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValidationError:&nbsp;If&nbsp;the&nbsp;object&nbsp;could&nbsp;not&nbsp;be&nbsp;validated.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;validated&nbsp;model&nbsp;instance.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_validate_json"><strong>model_validate_json</strong></a>(
+    json_data: 'str | bytes | bytearray',
+    *,
+    strict: 'bool | None' = None,
+    context: 'Any | None' = None,
+    by_alias: 'bool | None' = None,
+    by_name: 'bool | None' = None
+) -&gt; 'Self'</dt><dd><span class="code">!!!&nbsp;abstract&nbsp;"Usage&nbsp;Documentation"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON&nbsp;Parsing](../concepts/json.md#json-parsing)<br>
+&nbsp;<br>
+Validate&nbsp;the&nbsp;given&nbsp;JSON&nbsp;data&nbsp;against&nbsp;the&nbsp;Pydantic&nbsp;model.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;json_data:&nbsp;The&nbsp;JSON&nbsp;data&nbsp;to&nbsp;validate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;strict:&nbsp;Whether&nbsp;to&nbsp;enforce&nbsp;types&nbsp;strictly.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Extra&nbsp;variables&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;validator.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;the&nbsp;field's&nbsp;alias&nbsp;when&nbsp;validating&nbsp;against&nbsp;the&nbsp;provided&nbsp;input&nbsp;data.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_name:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;the&nbsp;field's&nbsp;name&nbsp;when&nbsp;validating&nbsp;against&nbsp;the&nbsp;provided&nbsp;input&nbsp;data.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;validated&nbsp;Pydantic&nbsp;model.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValidationError:&nbsp;If&nbsp;`json_data`&nbsp;is&nbsp;not&nbsp;a&nbsp;JSON&nbsp;string&nbsp;or&nbsp;the&nbsp;object&nbsp;could&nbsp;not&nbsp;be&nbsp;validated.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-model_validate_strings"><strong>model_validate_strings</strong></a>(
+    obj: 'Any',
+    *,
+    strict: 'bool | None' = None,
+    context: 'Any | None' = None,
+    by_alias: 'bool | None' = None,
+    by_name: 'bool | None' = None
+) -&gt; 'Self'</dt><dd><span class="code">Validate&nbsp;the&nbsp;given&nbsp;object&nbsp;with&nbsp;string&nbsp;data&nbsp;against&nbsp;the&nbsp;Pydantic&nbsp;model.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;obj:&nbsp;The&nbsp;object&nbsp;containing&nbsp;string&nbsp;data&nbsp;to&nbsp;validate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;strict:&nbsp;Whether&nbsp;to&nbsp;enforce&nbsp;types&nbsp;strictly.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Extra&nbsp;variables&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;validator.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;the&nbsp;field's&nbsp;alias&nbsp;when&nbsp;validating&nbsp;against&nbsp;the&nbsp;provided&nbsp;input&nbsp;data.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_name:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;the&nbsp;field's&nbsp;name&nbsp;when&nbsp;validating&nbsp;against&nbsp;the&nbsp;provided&nbsp;input&nbsp;data.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;validated&nbsp;Pydantic&nbsp;model.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-parse_file"><strong>parse_file</strong></a>(
+    path: 'str | Path',
+    *,
+    content_type: 'str | None' = None,
+    encoding: 'str' = 'utf8',
+    proto: 'DeprecatedParseProtocol | None' = None,
+    allow_pickle: 'bool' = False
+) -&gt; 'Self'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-parse_obj"><strong>parse_obj</strong></a>(obj: 'Any') -&gt; 'Self'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-parse_raw"><strong>parse_raw</strong></a>(
+    b: 'str | bytes',
+    *,
+    content_type: 'str | None' = None,
+    encoding: 'str' = 'utf8',
+    proto: 'DeprecatedParseProtocol | None' = None,
+    allow_pickle: 'bool' = False
+) -&gt; 'Self'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-schema"><strong>schema</strong></a>(by_alias: 'bool' = True, ref_template: 'str' = '#/$defs/{model}') -&gt; 'Dict[str, Any]'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-schema_json"><strong>schema_json</strong></a>(
+    *,
+    by_alias: 'bool' = True,
+    ref_template: 'str' = '#/$defs/{model}',
+    **dumps_kwargs: 'Any'
+) -&gt; 'str'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-update_forward_refs"><strong>update_forward_refs</strong></a>(**localns: 'Any') -&gt; 'None'</dt></dl>
+
+<dl><dt><a name="LineListOutputParser-validate"><strong>validate</strong></a>(value: 'Any') -&gt; 'Self'</dt></dl>
+
+<hr>
+Readonly properties inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><strong>__fields_set__</strong></dt>
+</dl>
+<dl><dt><strong>model_extra</strong></dt>
+<dd><span class="code">Get&nbsp;extra&nbsp;fields&nbsp;set&nbsp;during&nbsp;validation.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;extra&nbsp;fields,&nbsp;or&nbsp;`None`&nbsp;if&nbsp;`config.extra`&nbsp;is&nbsp;not&nbsp;set&nbsp;to&nbsp;`"allow"`.</span></dd>
+</dl>
+<dl><dt><strong>model_fields_set</strong></dt>
+<dd><span class="code">Returns&nbsp;the&nbsp;set&nbsp;of&nbsp;fields&nbsp;that&nbsp;have&nbsp;been&nbsp;explicitly&nbsp;set&nbsp;on&nbsp;this&nbsp;model&nbsp;instance.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;set&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;fields&nbsp;that&nbsp;have&nbsp;been&nbsp;set,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.e.&nbsp;that&nbsp;were&nbsp;not&nbsp;filled&nbsp;from&nbsp;defaults.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><strong>__pydantic_extra__</strong></dt>
+</dl>
+<dl><dt><strong>__pydantic_fields_set__</strong></dt>
+</dl>
+<dl><dt><strong>__pydantic_private__</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+<dl><dt><strong>__pydantic_root_model__</strong> = False</dl>
+
+<dl><dt><strong>model_computed_fields</strong> = {}</dl>
+
+<dl><dt><strong>model_fields</strong> = {'name': FieldInfo(annotation=Union[str, NoneType], required=False, default=None)}</dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.runnables.base.html#Runnable">langchain_core.runnables.base.Runnable</a>:<br>
+<dl><dt><a name="LineListOutputParser-__or__"><strong>__or__</strong></a>(
+    self,
+    other: 'Union[Runnable[Any, Other], Callable[[Iterator[Any]], Iterator[Other]], Callable[[AsyncIterator[Any]], AsyncIterator[Other]], Callable[[Any], Other], Mapping[str, Union[Runnable[Any, Other], Callable[[Any], Other], Any]]]'
+) -&gt; 'RunnableSerializable[Input, Other]'</dt><dd><span class="code">Compose&nbsp;this&nbsp;``Runnable``&nbsp;with&nbsp;another&nbsp;object&nbsp;to&nbsp;create&nbsp;a&nbsp;``RunnableSequence``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-__ror__"><strong>__ror__</strong></a>(
+    self,
+    other: 'Union[Runnable[Other, Any], Callable[[Iterator[Other]], Iterator[Any]], Callable[[AsyncIterator[Other]], AsyncIterator[Any]], Callable[[Other], Any], Mapping[str, Union[Runnable[Other, Any], Callable[[Other], Any], Any]]]'
+) -&gt; 'RunnableSerializable[Other, Output]'</dt><dd><span class="code">Compose&nbsp;this&nbsp;``Runnable``&nbsp;with&nbsp;another&nbsp;object&nbsp;to&nbsp;create&nbsp;a&nbsp;``RunnableSequence``.</span></dd></dl>
+
+<dl><dt>async <a name="LineListOutputParser-abatch"><strong>abatch</strong></a>(
+    self,
+    inputs: 'list[Input]',
+    config: 'Optional[Union[RunnableConfig, list[RunnableConfig]]]' = None,
+    *,
+    return_exceptions: 'bool' = False,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'list[Output]'</dt><dd><span class="code">Default&nbsp;implementation&nbsp;runs&nbsp;``ainvoke``&nbsp;in&nbsp;parallel&nbsp;using&nbsp;``asyncio.gather``.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;``batch``&nbsp;works&nbsp;well&nbsp;for&nbsp;IO&nbsp;bound&nbsp;runnables.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;batch&nbsp;more&nbsp;efficiently;<br>
+e.g.,&nbsp;if&nbsp;the&nbsp;underlying&nbsp;``Runnable``&nbsp;uses&nbsp;an&nbsp;API&nbsp;which&nbsp;supports&nbsp;a&nbsp;batch&nbsp;mode.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inputs:&nbsp;A&nbsp;list&nbsp;of&nbsp;inputs&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;invoking&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;config&nbsp;supports&nbsp;standard&nbsp;keys&nbsp;like&nbsp;``'tags'``,&nbsp;``'metadata'``&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tracing&nbsp;purposes,&nbsp;``'max_concurrency'``&nbsp;for&nbsp;controlling&nbsp;how&nbsp;much&nbsp;work&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do&nbsp;in&nbsp;parallel,&nbsp;and&nbsp;other&nbsp;keys.&nbsp;Please&nbsp;refer&nbsp;to&nbsp;the&nbsp;``RunnableConfig``<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;more&nbsp;details.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return_exceptions:&nbsp;Whether&nbsp;to&nbsp;return&nbsp;exceptions&nbsp;instead&nbsp;of&nbsp;raising&nbsp;them.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;list&nbsp;of&nbsp;outputs&nbsp;from&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt>async <a name="LineListOutputParser-abatch_as_completed"><strong>abatch_as_completed</strong></a>(
+    self,
+    inputs: 'Sequence[Input]',
+    config: 'Optional[Union[RunnableConfig, Sequence[RunnableConfig]]]' = None,
+    *,
+    return_exceptions: 'bool' = False,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'AsyncIterator[tuple[int, Union[Output, Exception]]]'</dt><dd><span class="code">Run&nbsp;``ainvoke``&nbsp;in&nbsp;parallel&nbsp;on&nbsp;a&nbsp;list&nbsp;of&nbsp;inputs.<br>
+&nbsp;<br>
+Yields&nbsp;results&nbsp;as&nbsp;they&nbsp;complete.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inputs:&nbsp;A&nbsp;list&nbsp;of&nbsp;inputs&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;invoking&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;config&nbsp;supports&nbsp;standard&nbsp;keys&nbsp;like&nbsp;``'tags'``,&nbsp;``'metadata'``&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tracing&nbsp;purposes,&nbsp;``'max_concurrency'``&nbsp;for&nbsp;controlling&nbsp;how&nbsp;much&nbsp;work&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do&nbsp;in&nbsp;parallel,&nbsp;and&nbsp;other&nbsp;keys.&nbsp;Please&nbsp;refer&nbsp;to&nbsp;the&nbsp;``RunnableConfig``<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;more&nbsp;details.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return_exceptions:&nbsp;Whether&nbsp;to&nbsp;return&nbsp;exceptions&nbsp;instead&nbsp;of&nbsp;raising&nbsp;them.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;tuple&nbsp;of&nbsp;the&nbsp;index&nbsp;of&nbsp;the&nbsp;input&nbsp;and&nbsp;the&nbsp;output&nbsp;from&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-as_tool"><strong>as_tool</strong></a>(
+    self,
+    args_schema: 'Optional[type[BaseModel]]' = None,
+    *,
+    name: 'Optional[str]' = None,
+    description: 'Optional[str]' = None,
+    arg_types: 'Optional[dict[str, type]]' = None
+) -&gt; 'BaseTool'</dt><dd><span class="code">..&nbsp;beta::<br>
+&nbsp;&nbsp;&nbsp;This&nbsp;API&nbsp;is&nbsp;in&nbsp;beta&nbsp;and&nbsp;may&nbsp;change&nbsp;in&nbsp;the&nbsp;future.<br>
+&nbsp;<br>
+Create&nbsp;a&nbsp;``BaseTool``&nbsp;from&nbsp;a&nbsp;``Runnable``.<br>
+&nbsp;<br>
+``as_tool``&nbsp;will&nbsp;instantiate&nbsp;a&nbsp;``BaseTool``&nbsp;with&nbsp;a&nbsp;name,&nbsp;description,&nbsp;and<br>
+``args_schema``&nbsp;from&nbsp;a&nbsp;``Runnable``.&nbsp;Where&nbsp;possible,&nbsp;schemas&nbsp;are&nbsp;inferred<br>
+from&nbsp;``runnable.get_input_schema``.&nbsp;Alternatively&nbsp;(e.g.,&nbsp;if&nbsp;the<br>
+``Runnable``&nbsp;takes&nbsp;a&nbsp;dict&nbsp;as&nbsp;input&nbsp;and&nbsp;the&nbsp;specific&nbsp;dict&nbsp;keys&nbsp;are&nbsp;not&nbsp;typed),<br>
+the&nbsp;schema&nbsp;can&nbsp;be&nbsp;specified&nbsp;directly&nbsp;with&nbsp;``args_schema``.&nbsp;You&nbsp;can&nbsp;also<br>
+pass&nbsp;``arg_types``&nbsp;to&nbsp;just&nbsp;specify&nbsp;the&nbsp;required&nbsp;arguments&nbsp;and&nbsp;their&nbsp;types.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args_schema:&nbsp;The&nbsp;schema&nbsp;for&nbsp;the&nbsp;tool.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;tool.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;description:&nbsp;The&nbsp;description&nbsp;of&nbsp;the&nbsp;tool.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;arg_types:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;argument&nbsp;names&nbsp;to&nbsp;types.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;message_version:&nbsp;Version&nbsp;of&nbsp;``ToolMessage``&nbsp;to&nbsp;return&nbsp;given<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:class:`~langchain_core.messages.content_blocks.ToolCall`&nbsp;input.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;``BaseTool``&nbsp;instance.<br>
+&nbsp;<br>
+Typed&nbsp;dict&nbsp;input:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;typing_extensions&nbsp;import&nbsp;TypedDict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Args(TypedDict):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b:&nbsp;list[int]<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;f(x:&nbsp;Args)&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;str(x["a"]&nbsp;*&nbsp;max(x["b"]))<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(f)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as_tool&nbsp;=&nbsp;runnable.<a href="#LineListOutputParser-as_tool">as_tool</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as_tool.<a href="#LineListOutputParser-invoke">invoke</a>({"a":&nbsp;3,&nbsp;"b":&nbsp;[1,&nbsp;2]})<br>
+&nbsp;<br>
+``dict``&nbsp;input,&nbsp;specifying&nbsp;schema&nbsp;via&nbsp;``args_schema``:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;typing&nbsp;import&nbsp;Any<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;pydantic&nbsp;import&nbsp;BaseModel,&nbsp;Field<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;f(x:&nbsp;dict[str,&nbsp;Any])&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;str(x["a"]&nbsp;*&nbsp;max(x["b"]))<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;FSchema(BaseModel):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Apply&nbsp;a&nbsp;function&nbsp;to&nbsp;an&nbsp;integer&nbsp;and&nbsp;list&nbsp;of&nbsp;integers."""<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:&nbsp;int&nbsp;=&nbsp;Field(...,&nbsp;description="Integer")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b:&nbsp;list[int]&nbsp;=&nbsp;Field(...,&nbsp;description="List&nbsp;of&nbsp;ints")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(f)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as_tool&nbsp;=&nbsp;runnable.<a href="#LineListOutputParser-as_tool">as_tool</a>(FSchema)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as_tool.<a href="#LineListOutputParser-invoke">invoke</a>({"a":&nbsp;3,&nbsp;"b":&nbsp;[1,&nbsp;2]})<br>
+&nbsp;<br>
+``dict``&nbsp;input,&nbsp;specifying&nbsp;schema&nbsp;via&nbsp;``arg_types``:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;typing&nbsp;import&nbsp;Any<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;f(x:&nbsp;dict[str,&nbsp;Any])&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;str(x["a"]&nbsp;*&nbsp;max(x["b"]))<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(f)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as_tool&nbsp;=&nbsp;runnable.<a href="#LineListOutputParser-as_tool">as_tool</a>(arg_types={"a":&nbsp;int,&nbsp;"b":&nbsp;list[int]})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as_tool.<a href="#LineListOutputParser-invoke">invoke</a>({"a":&nbsp;3,&nbsp;"b":&nbsp;[1,&nbsp;2]})<br>
+&nbsp;<br>
+String&nbsp;input:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;f(x:&nbsp;str)&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;"a"<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;g(x:&nbsp;str)&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;"z"<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(f)&nbsp;|&nbsp;g<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as_tool&nbsp;=&nbsp;runnable.<a href="#LineListOutputParser-as_tool">as_tool</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;as_tool.<a href="#LineListOutputParser-invoke">invoke</a>("b")<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;0.2.14</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-assign"><strong>assign</strong></a>(
+    self,
+    **kwargs: 'Union[Runnable[dict[str, Any], Any], Callable[[dict[str, Any]], Any], Mapping[str, Union[Runnable[dict[str, Any], Any], Callable[[dict[str, Any]], Any]]]]'
+) -&gt; 'RunnableSerializable[Any, Any]'</dt><dd><span class="code">Assigns&nbsp;new&nbsp;fields&nbsp;to&nbsp;the&nbsp;dict&nbsp;output&nbsp;of&nbsp;this&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;new&nbsp;``Runnable``.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_community.llms.fake&nbsp;import&nbsp;FakeStreamingListLLM<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.output_parsers&nbsp;import&nbsp;StrOutputParser<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.prompts&nbsp;import&nbsp;SystemMessagePromptTemplate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;Runnable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;operator&nbsp;import&nbsp;itemgetter<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prompt&nbsp;=&nbsp;(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SystemMessagePromptTemplate.from_template("You&nbsp;are&nbsp;a&nbsp;nice&nbsp;assistant.")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;"{question}"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;llm&nbsp;=&nbsp;FakeStreamingListLLM(responses=["foo-lish"])<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain:&nbsp;Runnable&nbsp;=&nbsp;prompt&nbsp;|&nbsp;llm&nbsp;|&nbsp;{"str":&nbsp;StrOutputParser()}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain_with_assign&nbsp;=&nbsp;chain.<a href="#LineListOutputParser-assign">assign</a>(hello=itemgetter("str")&nbsp;|&nbsp;llm)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(chain_with_assign.input_schema.<a href="#LineListOutputParser-model_json_schema">model_json_schema</a>())<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;{'title':&nbsp;'PromptInput',&nbsp;'type':&nbsp;'object',&nbsp;'properties':<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{'question':&nbsp;{'title':&nbsp;'Question',&nbsp;'type':&nbsp;'string'}}}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(chain_with_assign.output_schema.<a href="#LineListOutputParser-model_json_schema">model_json_schema</a>())<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;{'title':&nbsp;'RunnableSequenceOutput',&nbsp;'type':&nbsp;'object',&nbsp;'properties':<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{'str':&nbsp;{'title':&nbsp;'Str',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'type':&nbsp;'string'},&nbsp;'hello':&nbsp;{'title':&nbsp;'Hello',&nbsp;'type':&nbsp;'string'}}}</span></dd></dl>
+
+<dl><dt>async <a name="LineListOutputParser-astream"><strong>astream</strong></a>(
+    self,
+    input: 'Input',
+    config: 'Optional[RunnableConfig]' = None,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'AsyncIterator[Output]'</dt><dd><span class="code">Default&nbsp;implementation&nbsp;of&nbsp;``astream``,&nbsp;which&nbsp;calls&nbsp;``ainvoke``.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;support&nbsp;streaming&nbsp;output.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;The&nbsp;input&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;``Runnable``.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;output&nbsp;of&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt>async <a name="LineListOutputParser-astream_events"><strong>astream_events</strong></a>(
+    self,
+    input: 'Any',
+    config: 'Optional[RunnableConfig]' = None,
+    *,
+    version: "Literal['v1', 'v2']" = 'v2',
+    include_names: 'Optional[Sequence[str]]' = None,
+    include_types: 'Optional[Sequence[str]]' = None,
+    include_tags: 'Optional[Sequence[str]]' = None,
+    exclude_names: 'Optional[Sequence[str]]' = None,
+    exclude_types: 'Optional[Sequence[str]]' = None,
+    exclude_tags: 'Optional[Sequence[str]]' = None,
+    **kwargs: 'Any'
+) -&gt; 'AsyncIterator[StreamEvent]'</dt><dd><span class="code">Generate&nbsp;a&nbsp;stream&nbsp;of&nbsp;events.<br>
+&nbsp;<br>
+Use&nbsp;to&nbsp;create&nbsp;an&nbsp;iterator&nbsp;over&nbsp;``StreamEvents``&nbsp;that&nbsp;provide&nbsp;real-time&nbsp;information<br>
+about&nbsp;the&nbsp;progress&nbsp;of&nbsp;the&nbsp;``Runnable``,&nbsp;including&nbsp;``StreamEvents``&nbsp;from&nbsp;intermediate<br>
+results.<br>
+&nbsp;<br>
+A&nbsp;``StreamEvent``&nbsp;is&nbsp;a&nbsp;dictionary&nbsp;with&nbsp;the&nbsp;following&nbsp;schema:<br>
+&nbsp;<br>
+-&nbsp;``event``:&nbsp;**str**&nbsp;-&nbsp;Event&nbsp;names&nbsp;are&nbsp;of&nbsp;the&nbsp;format:<br>
+&nbsp;&nbsp;``on_[runnable_type]_(start|stream|end)``.<br>
+-&nbsp;``name``:&nbsp;**str**&nbsp;-&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;``Runnable``&nbsp;that&nbsp;generated&nbsp;the&nbsp;event.<br>
+-&nbsp;``run_id``:&nbsp;**str**&nbsp;-&nbsp;randomly&nbsp;generated&nbsp;ID&nbsp;associated&nbsp;with&nbsp;the&nbsp;given<br>
+&nbsp;&nbsp;execution&nbsp;of&nbsp;the&nbsp;``Runnable``&nbsp;that&nbsp;emitted&nbsp;the&nbsp;event.&nbsp;A&nbsp;child&nbsp;``Runnable``&nbsp;that&nbsp;gets<br>
+&nbsp;&nbsp;invoked&nbsp;as&nbsp;part&nbsp;of&nbsp;the&nbsp;execution&nbsp;of&nbsp;a&nbsp;parent&nbsp;``Runnable``&nbsp;is&nbsp;assigned&nbsp;its&nbsp;own<br>
+&nbsp;&nbsp;unique&nbsp;ID.<br>
+-&nbsp;``parent_ids``:&nbsp;**list[str]**&nbsp;-&nbsp;The&nbsp;IDs&nbsp;of&nbsp;the&nbsp;parent&nbsp;runnables&nbsp;that&nbsp;generated<br>
+&nbsp;&nbsp;the&nbsp;event.&nbsp;The&nbsp;root&nbsp;``Runnable``&nbsp;will&nbsp;have&nbsp;an&nbsp;empty&nbsp;list.&nbsp;The&nbsp;order&nbsp;of&nbsp;the&nbsp;parent<br>
+&nbsp;&nbsp;IDs&nbsp;is&nbsp;from&nbsp;the&nbsp;root&nbsp;to&nbsp;the&nbsp;immediate&nbsp;parent.&nbsp;Only&nbsp;available&nbsp;for&nbsp;v2&nbsp;version&nbsp;of<br>
+&nbsp;&nbsp;the&nbsp;API.&nbsp;The&nbsp;v1&nbsp;version&nbsp;of&nbsp;the&nbsp;API&nbsp;will&nbsp;return&nbsp;an&nbsp;empty&nbsp;list.<br>
+-&nbsp;``tags``:&nbsp;**Optional[list[str]]**&nbsp;-&nbsp;The&nbsp;tags&nbsp;of&nbsp;the&nbsp;``Runnable``&nbsp;that&nbsp;generated<br>
+&nbsp;&nbsp;the&nbsp;event.<br>
+-&nbsp;``metadata``:&nbsp;**Optional[dict[str,&nbsp;Any]]**&nbsp;-&nbsp;The&nbsp;metadata&nbsp;of&nbsp;the&nbsp;``Runnable``&nbsp;that<br>
+&nbsp;&nbsp;generated&nbsp;the&nbsp;event.<br>
+-&nbsp;``data``:&nbsp;**dict[str,&nbsp;Any]**<br>
+&nbsp;<br>
+Below&nbsp;is&nbsp;a&nbsp;table&nbsp;that&nbsp;illustrates&nbsp;some&nbsp;events&nbsp;that&nbsp;might&nbsp;be&nbsp;emitted&nbsp;by&nbsp;various<br>
+chains.&nbsp;Metadata&nbsp;fields&nbsp;have&nbsp;been&nbsp;omitted&nbsp;from&nbsp;the&nbsp;table&nbsp;for&nbsp;brevity.<br>
+Chain&nbsp;definitions&nbsp;have&nbsp;been&nbsp;included&nbsp;after&nbsp;the&nbsp;table.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;reference&nbsp;table&nbsp;is&nbsp;for&nbsp;the&nbsp;v2&nbsp;version&nbsp;of&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;event&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;chunk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;input&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;output&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++==========================+==================+=====================================+===================================================+=====================================================+<br>
+|&nbsp;``on_chat_model_start``&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{"messages":&nbsp;[[SystemMessage,&nbsp;HumanMessage]]}``&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_chat_model_stream``&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``AIMessageChunk(content="hello")``&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_chat_model_end``&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{"messages":&nbsp;[[SystemMessage,&nbsp;HumanMessage]]}``&nbsp;|&nbsp;``AIMessageChunk(content="hello&nbsp;world")``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_llm_start``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{'input':&nbsp;'hello'}``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_llm_stream``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``'Hello'&nbsp;``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_llm_end``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``'Hello&nbsp;human!'``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_chain_start``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;format_docs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_chain_stream``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;format_docs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``'hello&nbsp;world!,&nbsp;goodbye&nbsp;world!'``&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_chain_end``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;format_docs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``[Document(...)]``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``'hello&nbsp;world!,&nbsp;goodbye&nbsp;world!'``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_tool_start``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;some_tool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{"x":&nbsp;1,&nbsp;"y":&nbsp;"2"}``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_tool_end``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;some_tool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{"x":&nbsp;1,&nbsp;"y":&nbsp;"2"}``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_retriever_start``&nbsp;&nbsp;&nbsp;|&nbsp;[retriever&nbsp;name]&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{"query":&nbsp;"hello"}``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_retriever_end``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[retriever&nbsp;name]&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{"query":&nbsp;"hello"}``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``[Document(...),&nbsp;..]``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_prompt_start``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[template_name]&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{"question":&nbsp;"hello"}``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+|&nbsp;``on_prompt_end``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[template_name]&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``{"question":&nbsp;"hello"}``&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;``ChatPromptValue(messages:&nbsp;[SystemMessage,&nbsp;...])``&nbsp;|<br>
++--------------------------+------------------+-------------------------------------+---------------------------------------------------+-----------------------------------------------------+<br>
+&nbsp;<br>
+In&nbsp;addition&nbsp;to&nbsp;the&nbsp;standard&nbsp;events,&nbsp;users&nbsp;can&nbsp;also&nbsp;dispatch&nbsp;custom&nbsp;events&nbsp;(see&nbsp;example&nbsp;below).<br>
+&nbsp;<br>
+Custom&nbsp;events&nbsp;will&nbsp;be&nbsp;only&nbsp;be&nbsp;surfaced&nbsp;with&nbsp;in&nbsp;the&nbsp;v2&nbsp;version&nbsp;of&nbsp;the&nbsp;API!<br>
+&nbsp;<br>
+A&nbsp;custom&nbsp;event&nbsp;has&nbsp;following&nbsp;format:<br>
+&nbsp;<br>
++-----------+------+-----------------------------------------------------------------------------------------------------------+<br>
+|&nbsp;Attribute&nbsp;|&nbsp;Type&nbsp;|&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++===========+======+===========================================================================================================+<br>
+|&nbsp;name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;str&nbsp;&nbsp;|&nbsp;A&nbsp;user&nbsp;defined&nbsp;name&nbsp;for&nbsp;the&nbsp;event.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++-----------+------+-----------------------------------------------------------------------------------------------------------+<br>
+|&nbsp;data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;Any&nbsp;&nbsp;|&nbsp;The&nbsp;data&nbsp;associated&nbsp;with&nbsp;the&nbsp;event.&nbsp;This&nbsp;can&nbsp;be&nbsp;anything,&nbsp;though&nbsp;we&nbsp;suggest&nbsp;making&nbsp;it&nbsp;JSON&nbsp;serializable.&nbsp;&nbsp;|<br>
++-----------+------+-----------------------------------------------------------------------------------------------------------+<br>
+&nbsp;<br>
+Here&nbsp;are&nbsp;declarations&nbsp;associated&nbsp;with&nbsp;the&nbsp;standard&nbsp;events&nbsp;shown&nbsp;above:<br>
+&nbsp;<br>
+``format_docs``:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;format_docs(docs:&nbsp;list[Document])&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''Format&nbsp;the&nbsp;docs.'''<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;",&nbsp;".join([doc.page_content&nbsp;for&nbsp;doc&nbsp;in&nbsp;docs])<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;format_docs&nbsp;=&nbsp;RunnableLambda(format_docs)<br>
+&nbsp;<br>
+``some_tool``:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@tool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;some_tool(x:&nbsp;int,&nbsp;y:&nbsp;str)&nbsp;-&gt;&nbsp;dict:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''Some_tool.'''<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;{"x":&nbsp;x,&nbsp;"y":&nbsp;y}<br>
+&nbsp;<br>
+``prompt``:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;template&nbsp;=&nbsp;ChatPromptTemplate.from_messages(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[("system",&nbsp;"You&nbsp;are&nbsp;Cat&nbsp;Agent&nbsp;007"),&nbsp;("human",&nbsp;"{question}")]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;).<a href="#LineListOutputParser-with_config">with_config</a>({"run_name":&nbsp;"my_template",&nbsp;"tags":&nbsp;["my_template"]})<br>
+&nbsp;<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;reverse(s:&nbsp;str)&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;s[::-1]<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;RunnableLambda(func=reverse)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;events&nbsp;=&nbsp;[<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event&nbsp;async&nbsp;for&nbsp;event&nbsp;in&nbsp;chain.<a href="#LineListOutputParser-astream_events">astream_events</a>("hello",&nbsp;version="v2")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;will&nbsp;produce&nbsp;the&nbsp;following&nbsp;events&nbsp;(run_id,&nbsp;and&nbsp;parent_ids<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;has&nbsp;been&nbsp;omitted&nbsp;for&nbsp;brevity):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"data":&nbsp;{"input":&nbsp;"hello"},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"event":&nbsp;"on_chain_start",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadata":&nbsp;{},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"reverse",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags":&nbsp;[],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"data":&nbsp;{"chunk":&nbsp;"olleh"},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"event":&nbsp;"on_chain_stream",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadata":&nbsp;{},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"reverse",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags":&nbsp;[],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"data":&nbsp;{"output":&nbsp;"olleh"},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"event":&nbsp;"on_chain_end",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadata":&nbsp;{},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"reverse",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags":&nbsp;[],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+&nbsp;<br>
+&nbsp;<br>
+Example:&nbsp;Dispatch&nbsp;Custom&nbsp;Event<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.callbacks.manager&nbsp;import&nbsp;(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adispatch_custom_event,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda,&nbsp;RunnableConfig<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;asyncio<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;slow_thing(some_input:&nbsp;str,&nbsp;config:&nbsp;RunnableConfig)&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Do&nbsp;something&nbsp;that&nbsp;takes&nbsp;a&nbsp;long&nbsp;time."""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;asyncio.sleep(1)&nbsp;#&nbsp;Placeholder&nbsp;for&nbsp;some&nbsp;slow&nbsp;operation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;adispatch_custom_event(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"progress_event",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"message":&nbsp;"Finished&nbsp;step&nbsp;1&nbsp;of&nbsp;3"},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;config=config&nbsp;#&nbsp;Must&nbsp;be&nbsp;included&nbsp;for&nbsp;python&nbsp;&lt;&nbsp;3.10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;asyncio.sleep(1)&nbsp;#&nbsp;Placeholder&nbsp;for&nbsp;some&nbsp;slow&nbsp;operation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;adispatch_custom_event(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"progress_event",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"message":&nbsp;"Finished&nbsp;step&nbsp;2&nbsp;of&nbsp;3"},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;config=config&nbsp;#&nbsp;Must&nbsp;be&nbsp;included&nbsp;for&nbsp;python&nbsp;&lt;&nbsp;3.10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;asyncio.sleep(1)&nbsp;#&nbsp;Placeholder&nbsp;for&nbsp;some&nbsp;slow&nbsp;operation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;"Done"<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;slow_thing&nbsp;=&nbsp;RunnableLambda(slow_thing)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;for&nbsp;event&nbsp;in&nbsp;slow_thing.<a href="#LineListOutputParser-astream_events">astream_events</a>("some_input",&nbsp;version="v2"):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(event)<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;The&nbsp;input&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;version:&nbsp;The&nbsp;version&nbsp;of&nbsp;the&nbsp;schema&nbsp;to&nbsp;use&nbsp;either&nbsp;``'v2'``&nbsp;or&nbsp;``'v1'``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Users&nbsp;should&nbsp;use&nbsp;``'v2'``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``'v1'``&nbsp;is&nbsp;for&nbsp;backwards&nbsp;compatibility&nbsp;and&nbsp;will&nbsp;be&nbsp;deprecated<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;0.4.0.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No&nbsp;default&nbsp;will&nbsp;be&nbsp;assigned&nbsp;until&nbsp;the&nbsp;API&nbsp;is&nbsp;stabilized.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;custom&nbsp;events&nbsp;will&nbsp;only&nbsp;be&nbsp;surfaced&nbsp;in&nbsp;``'v2'``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_names:&nbsp;Only&nbsp;include&nbsp;events&nbsp;from&nbsp;``Runnables``&nbsp;with&nbsp;matching&nbsp;names.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_types:&nbsp;Only&nbsp;include&nbsp;events&nbsp;from&nbsp;``Runnables``&nbsp;with&nbsp;matching&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_tags:&nbsp;Only&nbsp;include&nbsp;events&nbsp;from&nbsp;``Runnables``&nbsp;with&nbsp;matching&nbsp;tags.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_names:&nbsp;Exclude&nbsp;events&nbsp;from&nbsp;``Runnables``&nbsp;with&nbsp;matching&nbsp;names.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_types:&nbsp;Exclude&nbsp;events&nbsp;from&nbsp;``Runnables``&nbsp;with&nbsp;matching&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_tags:&nbsp;Exclude&nbsp;events&nbsp;from&nbsp;``Runnables``&nbsp;with&nbsp;matching&nbsp;tags.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;``astream_log``&nbsp;as&nbsp;this&nbsp;implementation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;``astream_events``&nbsp;is&nbsp;built&nbsp;on&nbsp;top&nbsp;of&nbsp;``astream_log``.<br>
+&nbsp;<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;async&nbsp;stream&nbsp;of&nbsp;``StreamEvents``.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;NotImplementedError:&nbsp;If&nbsp;the&nbsp;version&nbsp;is&nbsp;not&nbsp;``'v1'``&nbsp;or&nbsp;``'v2'``.</span></dd></dl>
+
+<dl><dt>async <a name="LineListOutputParser-astream_log"><strong>astream_log</strong></a>(
+    self,
+    input: 'Any',
+    config: 'Optional[RunnableConfig]' = None,
+    *,
+    diff: 'bool' = True,
+    with_streamed_output_list: 'bool' = True,
+    include_names: 'Optional[Sequence[str]]' = None,
+    include_types: 'Optional[Sequence[str]]' = None,
+    include_tags: 'Optional[Sequence[str]]' = None,
+    exclude_names: 'Optional[Sequence[str]]' = None,
+    exclude_types: 'Optional[Sequence[str]]' = None,
+    exclude_tags: 'Optional[Sequence[str]]' = None,
+    **kwargs: 'Any'
+) -&gt; 'Union[AsyncIterator[RunLogPatch], AsyncIterator[RunLog]]'</dt><dd><span class="code">Stream&nbsp;all&nbsp;output&nbsp;from&nbsp;a&nbsp;``Runnable``,&nbsp;as&nbsp;reported&nbsp;to&nbsp;the&nbsp;callback&nbsp;system.<br>
+&nbsp;<br>
+This&nbsp;includes&nbsp;all&nbsp;inner&nbsp;runs&nbsp;of&nbsp;LLMs,&nbsp;Retrievers,&nbsp;Tools,&nbsp;etc.<br>
+&nbsp;<br>
+Output&nbsp;is&nbsp;streamed&nbsp;as&nbsp;Log&nbsp;objects,&nbsp;which&nbsp;include&nbsp;a&nbsp;list&nbsp;of<br>
+Jsonpatch&nbsp;ops&nbsp;that&nbsp;describe&nbsp;how&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;run&nbsp;has&nbsp;changed&nbsp;in&nbsp;each<br>
+step,&nbsp;and&nbsp;the&nbsp;final&nbsp;state&nbsp;of&nbsp;the&nbsp;run.<br>
+&nbsp;<br>
+The&nbsp;Jsonpatch&nbsp;ops&nbsp;can&nbsp;be&nbsp;applied&nbsp;in&nbsp;order&nbsp;to&nbsp;construct&nbsp;state.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;The&nbsp;input&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;diff:&nbsp;Whether&nbsp;to&nbsp;yield&nbsp;diffs&nbsp;between&nbsp;each&nbsp;step&nbsp;or&nbsp;the&nbsp;current&nbsp;state.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with_streamed_output_list:&nbsp;Whether&nbsp;to&nbsp;yield&nbsp;the&nbsp;``streamed_output``&nbsp;list.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_names:&nbsp;Only&nbsp;include&nbsp;logs&nbsp;with&nbsp;these&nbsp;names.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_types:&nbsp;Only&nbsp;include&nbsp;logs&nbsp;with&nbsp;these&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_tags:&nbsp;Only&nbsp;include&nbsp;logs&nbsp;with&nbsp;these&nbsp;tags.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_names:&nbsp;Exclude&nbsp;logs&nbsp;with&nbsp;these&nbsp;names.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_types:&nbsp;Exclude&nbsp;logs&nbsp;with&nbsp;these&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_tags:&nbsp;Exclude&nbsp;logs&nbsp;with&nbsp;these&nbsp;tags.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;``RunLogPatch``&nbsp;or&nbsp;``RunLog``&nbsp;object.</span></dd></dl>
+
+<dl><dt>async <a name="LineListOutputParser-atransform"><strong>atransform</strong></a>(
+    self,
+    input: 'AsyncIterator[Input]',
+    config: 'Optional[RunnableConfig]' = None,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'AsyncIterator[Output]'</dt><dd><span class="code">Default&nbsp;implementation&nbsp;of&nbsp;atransform,&nbsp;which&nbsp;buffers&nbsp;input&nbsp;and&nbsp;calls&nbsp;``astream``.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;start&nbsp;producing&nbsp;output&nbsp;while<br>
+input&nbsp;is&nbsp;still&nbsp;being&nbsp;generated.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;An&nbsp;async&nbsp;iterator&nbsp;of&nbsp;inputs&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;``Runnable``.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;output&nbsp;of&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-batch"><strong>batch</strong></a>(
+    self,
+    inputs: 'list[Input]',
+    config: 'Optional[Union[RunnableConfig, list[RunnableConfig]]]' = None,
+    *,
+    return_exceptions: 'bool' = False,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'list[Output]'</dt><dd><span class="code">Default&nbsp;implementation&nbsp;runs&nbsp;invoke&nbsp;in&nbsp;parallel&nbsp;using&nbsp;a&nbsp;thread&nbsp;pool&nbsp;executor.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;batch&nbsp;works&nbsp;well&nbsp;for&nbsp;IO&nbsp;bound&nbsp;runnables.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;batch&nbsp;more&nbsp;efficiently;<br>
+e.g.,&nbsp;if&nbsp;the&nbsp;underlying&nbsp;``Runnable``&nbsp;uses&nbsp;an&nbsp;API&nbsp;which&nbsp;supports&nbsp;a&nbsp;batch&nbsp;mode.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-batch_as_completed"><strong>batch_as_completed</strong></a>(
+    self,
+    inputs: 'Sequence[Input]',
+    config: 'Optional[Union[RunnableConfig, Sequence[RunnableConfig]]]' = None,
+    *,
+    return_exceptions: 'bool' = False,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'Iterator[tuple[int, Union[Output, Exception]]]'</dt><dd><span class="code">Run&nbsp;``invoke``&nbsp;in&nbsp;parallel&nbsp;on&nbsp;a&nbsp;list&nbsp;of&nbsp;inputs.<br>
+&nbsp;<br>
+Yields&nbsp;results&nbsp;as&nbsp;they&nbsp;complete.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-bind"><strong>bind</strong></a>(self, **kwargs: 'Any') -&gt; 'Runnable[Input, Output]'</dt><dd><span class="code">Bind&nbsp;arguments&nbsp;to&nbsp;a&nbsp;``Runnable``,&nbsp;returning&nbsp;a&nbsp;new&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Useful&nbsp;when&nbsp;a&nbsp;``Runnable``&nbsp;in&nbsp;a&nbsp;chain&nbsp;requires&nbsp;an&nbsp;argument&nbsp;that&nbsp;is&nbsp;not<br>
+in&nbsp;the&nbsp;output&nbsp;of&nbsp;the&nbsp;previous&nbsp;``Runnable``&nbsp;or&nbsp;included&nbsp;in&nbsp;the&nbsp;user&nbsp;input.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;The&nbsp;arguments&nbsp;to&nbsp;bind&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;with&nbsp;the&nbsp;arguments&nbsp;bound.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_ollama&nbsp;import&nbsp;ChatOllama<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.output_parsers&nbsp;import&nbsp;StrOutputParser<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;llm&nbsp;=&nbsp;ChatOllama(model='llama2')<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Without&nbsp;bind.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;llm<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;StrOutputParser()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#LineListOutputParser-invoke">invoke</a>("Repeat&nbsp;quoted&nbsp;words&nbsp;exactly:&nbsp;'One&nbsp;two&nbsp;three&nbsp;four&nbsp;five.'")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Output&nbsp;is&nbsp;'One&nbsp;two&nbsp;three&nbsp;four&nbsp;five.'<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;With&nbsp;bind.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;llm.<a href="#LineListOutputParser-bind">bind</a>(stop=["three"])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;StrOutputParser()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#LineListOutputParser-invoke">invoke</a>("Repeat&nbsp;quoted&nbsp;words&nbsp;exactly:&nbsp;'One&nbsp;two&nbsp;three&nbsp;four&nbsp;five.'")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Output&nbsp;is&nbsp;'One&nbsp;two'</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-config_schema"><strong>config_schema</strong></a>(self, *, include: 'Optional[Sequence[str]]' = None) -&gt; 'type[BaseModel]'</dt><dd><span class="code">The&nbsp;type&nbsp;of&nbsp;config&nbsp;this&nbsp;``Runnable``&nbsp;accepts&nbsp;specified&nbsp;as&nbsp;a&nbsp;pydantic&nbsp;model.<br>
+&nbsp;<br>
+To&nbsp;mark&nbsp;a&nbsp;field&nbsp;as&nbsp;configurable,&nbsp;see&nbsp;the&nbsp;``configurable_fields``<br>
+and&nbsp;``configurable_alternatives``&nbsp;methods.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;A&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;config&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;config.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_config_jsonschema"><strong>get_config_jsonschema</strong></a>(self, *, include: 'Optional[Sequence[str]]' = None) -&gt; 'dict[str, Any]'</dt><dd><span class="code">Get&nbsp;a&nbsp;JSON&nbsp;schema&nbsp;that&nbsp;represents&nbsp;the&nbsp;config&nbsp;of&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;A&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;config&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;JSON&nbsp;schema&nbsp;that&nbsp;represents&nbsp;the&nbsp;config&nbsp;of&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;0.3.0</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_graph"><strong>get_graph</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'Graph'</dt><dd><span class="code">Return&nbsp;a&nbsp;graph&nbsp;representation&nbsp;of&nbsp;this&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_input_jsonschema"><strong>get_input_jsonschema</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'dict[str, Any]'</dt><dd><span class="code">Get&nbsp;a&nbsp;JSON&nbsp;schema&nbsp;that&nbsp;represents&nbsp;the&nbsp;input&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;generating&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;JSON&nbsp;schema&nbsp;that&nbsp;represents&nbsp;the&nbsp;input&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;add_one(x:&nbsp;int)&nbsp;-&gt;&nbsp;int:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;1<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(add_one)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(runnable.<a href="#LineListOutputParser-get_input_jsonschema">get_input_jsonschema</a>())<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;0.3.0</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_input_schema"><strong>get_input_schema</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'type[BaseModel]'</dt><dd><span class="code">Get&nbsp;a&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;input&nbsp;to&nbsp;the&nbsp;Runnable.<br>
+&nbsp;<br>
+``Runnable``s&nbsp;that&nbsp;leverage&nbsp;the&nbsp;``configurable_fields``&nbsp;and<br>
+``configurable_alternatives``&nbsp;methods&nbsp;will&nbsp;have&nbsp;a&nbsp;dynamic&nbsp;input&nbsp;schema&nbsp;that<br>
+depends&nbsp;on&nbsp;which&nbsp;configuration&nbsp;the&nbsp;``Runnable``&nbsp;is&nbsp;invoked&nbsp;with.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;allows&nbsp;to&nbsp;get&nbsp;an&nbsp;input&nbsp;schema&nbsp;for&nbsp;a&nbsp;specific&nbsp;configuration.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;generating&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;input.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_name"><strong>get_name</strong></a>(self, suffix: 'Optional[str]' = None, *, name: 'Optional[str]' = None) -&gt; 'str'</dt><dd><span class="code">Get&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_output_jsonschema"><strong>get_output_jsonschema</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'dict[str, Any]'</dt><dd><span class="code">Get&nbsp;a&nbsp;JSON&nbsp;schema&nbsp;that&nbsp;represents&nbsp;the&nbsp;output&nbsp;of&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;generating&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;JSON&nbsp;schema&nbsp;that&nbsp;represents&nbsp;the&nbsp;output&nbsp;of&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;add_one(x:&nbsp;int)&nbsp;-&gt;&nbsp;int:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;1<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(add_one)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(runnable.<a href="#LineListOutputParser-get_output_jsonschema">get_output_jsonschema</a>())<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;0.3.0</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_output_schema"><strong>get_output_schema</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'type[BaseModel]'</dt><dd><span class="code">Get&nbsp;a&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;output&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+``Runnable``s&nbsp;that&nbsp;leverage&nbsp;the&nbsp;``configurable_fields``&nbsp;and<br>
+``configurable_alternatives``&nbsp;methods&nbsp;will&nbsp;have&nbsp;a&nbsp;dynamic&nbsp;output&nbsp;schema&nbsp;that<br>
+depends&nbsp;on&nbsp;which&nbsp;configuration&nbsp;the&nbsp;``Runnable``&nbsp;is&nbsp;invoked&nbsp;with.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;allows&nbsp;to&nbsp;get&nbsp;an&nbsp;output&nbsp;schema&nbsp;for&nbsp;a&nbsp;specific&nbsp;configuration.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;generating&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;output.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-get_prompts"><strong>get_prompts</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'list[BasePromptTemplate]'</dt><dd><span class="code">Return&nbsp;a&nbsp;list&nbsp;of&nbsp;prompts&nbsp;used&nbsp;by&nbsp;this&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-map"><strong>map</strong></a>(self) -&gt; 'Runnable[list[Input], list[Output]]'</dt><dd><span class="code">Return&nbsp;a&nbsp;new&nbsp;``Runnable``&nbsp;that&nbsp;maps&nbsp;a&nbsp;list&nbsp;of&nbsp;inputs&nbsp;to&nbsp;a&nbsp;list&nbsp;of&nbsp;outputs.<br>
+&nbsp;<br>
+Calls&nbsp;``invoke``&nbsp;with&nbsp;each&nbsp;input.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;that&nbsp;maps&nbsp;a&nbsp;list&nbsp;of&nbsp;inputs&nbsp;to&nbsp;a&nbsp;list&nbsp;of&nbsp;outputs.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_lambda(x:&nbsp;int)&nbsp;-&gt;&nbsp;int:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;1<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(_lambda)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(runnable.<a href="#LineListOutputParser-map">map</a>().<a href="#LineListOutputParser-invoke">invoke</a>([1,&nbsp;2,&nbsp;3]))&nbsp;#&nbsp;[2,&nbsp;3,&nbsp;4]</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-pick"><strong>pick</strong></a>(self, keys: 'Union[str, list[str]]') -&gt; 'RunnableSerializable[Any, Any]'</dt><dd><span class="code">Pick&nbsp;keys&nbsp;from&nbsp;the&nbsp;output&nbsp;dict&nbsp;of&nbsp;this&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Pick&nbsp;single&nbsp;key:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;json<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda,&nbsp;RunnableMap<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as_str&nbsp;=&nbsp;RunnableLambda(str)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as_json&nbsp;=&nbsp;RunnableLambda(json.loads)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;RunnableMap(str=as_str,&nbsp;json=as_json)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#LineListOutputParser-invoke">invoke</a>("[1,&nbsp;2,&nbsp;3]")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;{"str":&nbsp;"[1,&nbsp;2,&nbsp;3]",&nbsp;"json":&nbsp;[1,&nbsp;2,&nbsp;3]}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json_only_chain&nbsp;=&nbsp;chain.<a href="#LineListOutputParser-pick">pick</a>("json")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json_only_chain.<a href="#LineListOutputParser-invoke">invoke</a>("[1,&nbsp;2,&nbsp;3]")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;[1,&nbsp;2,&nbsp;3]<br>
+&nbsp;<br>
+Pick&nbsp;list&nbsp;of&nbsp;keys:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;typing&nbsp;import&nbsp;Any<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;json<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda,&nbsp;RunnableMap<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as_str&nbsp;=&nbsp;RunnableLambda(str)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as_json&nbsp;=&nbsp;RunnableLambda(json.loads)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;as_bytes(x:&nbsp;Any)&nbsp;-&gt;&nbsp;bytes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;bytes(x,&nbsp;"utf-8")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;RunnableMap(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str=as_str,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json=as_json,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bytes=RunnableLambda(as_bytes)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#LineListOutputParser-invoke">invoke</a>("[1,&nbsp;2,&nbsp;3]")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;{"str":&nbsp;"[1,&nbsp;2,&nbsp;3]",&nbsp;"json":&nbsp;[1,&nbsp;2,&nbsp;3],&nbsp;"bytes":&nbsp;b"[1,&nbsp;2,&nbsp;3]"}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json_and_bytes_chain&nbsp;=&nbsp;chain.<a href="#LineListOutputParser-pick">pick</a>(["json",&nbsp;"bytes"])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json_and_bytes_chain.<a href="#LineListOutputParser-invoke">invoke</a>("[1,&nbsp;2,&nbsp;3]")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;{"json":&nbsp;[1,&nbsp;2,&nbsp;3],&nbsp;"bytes":&nbsp;b"[1,&nbsp;2,&nbsp;3]"}</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-pipe"><strong>pipe</strong></a>(
+    self,
+    *others: 'Union[Runnable[Any, Other], Callable[[Any], Other]]',
+    name: 'Optional[str]' = None
+) -&gt; 'RunnableSerializable[Input, Other]'</dt><dd><span class="code">Compose&nbsp;this&nbsp;``Runnable``&nbsp;with&nbsp;``Runnable``-like&nbsp;objects&nbsp;to&nbsp;make&nbsp;a&nbsp;``RunnableSequence``.<br>
+&nbsp;<br>
+Equivalent&nbsp;to&nbsp;``RunnableSequence(self,&nbsp;*others)``&nbsp;or&nbsp;``self&nbsp;|&nbsp;others[0]&nbsp;|&nbsp;...``<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;add_one(x:&nbsp;int)&nbsp;-&gt;&nbsp;int:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;1<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;mul_two(x:&nbsp;int)&nbsp;-&gt;&nbsp;int:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;*&nbsp;2<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable_1&nbsp;=&nbsp;RunnableLambda(add_one)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable_2&nbsp;=&nbsp;RunnableLambda(mul_two)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sequence&nbsp;=&nbsp;runnable_1.<a href="#LineListOutputParser-pipe">pipe</a>(runnable_2)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Or&nbsp;equivalently:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;sequence&nbsp;=&nbsp;runnable_1&nbsp;|&nbsp;runnable_2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;sequence&nbsp;=&nbsp;RunnableSequence(first=runnable_1,&nbsp;last=runnable_2)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sequence.<a href="#LineListOutputParser-invoke">invoke</a>(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;sequence.<a href="#LineListOutputParser-ainvoke">ainvoke</a>(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;4<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sequence.<a href="#LineListOutputParser-batch">batch</a>([1,&nbsp;2,&nbsp;3])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;sequence.<a href="#LineListOutputParser-abatch">abatch</a>([1,&nbsp;2,&nbsp;3])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;[4,&nbsp;6,&nbsp;8]</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-stream"><strong>stream</strong></a>(
+    self,
+    input: 'Input',
+    config: 'Optional[RunnableConfig]' = None,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'Iterator[Output]'</dt><dd><span class="code">Default&nbsp;implementation&nbsp;of&nbsp;``stream``,&nbsp;which&nbsp;calls&nbsp;``invoke``.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;support&nbsp;streaming&nbsp;output.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;The&nbsp;input&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;``Runnable``.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;output&nbsp;of&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-transform"><strong>transform</strong></a>(
+    self,
+    input: 'Iterator[Input]',
+    config: 'Optional[RunnableConfig]' = None,
+    **kwargs: 'Optional[Any]'
+) -&gt; 'Iterator[Output]'</dt><dd><span class="code">Default&nbsp;implementation&nbsp;of&nbsp;transform,&nbsp;which&nbsp;buffers&nbsp;input&nbsp;and&nbsp;calls&nbsp;``astream``.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;start&nbsp;producing&nbsp;output&nbsp;while<br>
+input&nbsp;is&nbsp;still&nbsp;being&nbsp;generated.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;An&nbsp;iterator&nbsp;of&nbsp;inputs&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;``Runnable``.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;output&nbsp;of&nbsp;the&nbsp;``Runnable``.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-with_alisteners"><strong>with_alisteners</strong></a>(
+    self,
+    *,
+    on_start: 'Optional[AsyncListener]' = None,
+    on_end: 'Optional[AsyncListener]' = None,
+    on_error: 'Optional[AsyncListener]' = None
+) -&gt; 'Runnable[Input, Output]'</dt><dd><span class="code">Bind&nbsp;async&nbsp;lifecycle&nbsp;listeners&nbsp;to&nbsp;a&nbsp;``Runnable``,&nbsp;returning&nbsp;a&nbsp;new&nbsp;``Runnable``.<br>
+&nbsp;<br>
+The&nbsp;Run&nbsp;object&nbsp;contains&nbsp;information&nbsp;about&nbsp;the&nbsp;run,&nbsp;including&nbsp;its&nbsp;``id``,<br>
+``type``,&nbsp;``input``,&nbsp;``output``,&nbsp;``error``,&nbsp;``start_time``,&nbsp;``end_time``,&nbsp;and<br>
+any&nbsp;tags&nbsp;or&nbsp;metadata&nbsp;added&nbsp;to&nbsp;the&nbsp;run.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on_start:&nbsp;Called&nbsp;asynchronously&nbsp;before&nbsp;the&nbsp;``Runnable``&nbsp;starts&nbsp;running,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;the&nbsp;``Run``&nbsp;object.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on_end:&nbsp;Called&nbsp;asynchronously&nbsp;after&nbsp;the&nbsp;``Runnable``&nbsp;finishes&nbsp;running,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;the&nbsp;``Run``&nbsp;object.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on_error:&nbsp;Called&nbsp;asynchronously&nbsp;if&nbsp;the&nbsp;``Runnable``&nbsp;throws&nbsp;an&nbsp;error,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;the&nbsp;``Run``&nbsp;object.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;with&nbsp;the&nbsp;listeners&nbsp;bound.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda,&nbsp;Runnable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;datetime&nbsp;import&nbsp;datetime,&nbsp;timezone<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;time<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;asyncio<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;format_t(timestamp:&nbsp;float)&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;datetime.fromtimestamp(timestamp,&nbsp;tz=timezone.utc).isoformat()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;test_runnable(time_to_sleep&nbsp;:&nbsp;int):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"Runnable[{time_to_sleep}s]:&nbsp;starts&nbsp;at&nbsp;{format_t(time.time())}")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;asyncio.sleep(time_to_sleep)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"Runnable[{time_to_sleep}s]:&nbsp;ends&nbsp;at&nbsp;{format_t(time.time())}")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;fn_start(run_obj&nbsp;:&nbsp;Runnable):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"on&nbsp;start&nbsp;callback&nbsp;starts&nbsp;at&nbsp;{format_t(time.time())}")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;asyncio.sleep(3)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"on&nbsp;start&nbsp;callback&nbsp;ends&nbsp;at&nbsp;{format_t(time.time())}")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;fn_end(run_obj&nbsp;:&nbsp;Runnable):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"on&nbsp;end&nbsp;callback&nbsp;starts&nbsp;at&nbsp;{format_t(time.time())}")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;asyncio.sleep(2)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"on&nbsp;end&nbsp;callback&nbsp;ends&nbsp;at&nbsp;{format_t(time.time())}")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(test_runnable).<a href="#LineListOutputParser-with_alisteners">with_alisteners</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on_start=fn_start,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on_end=fn_end<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;concurrent_runs():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;asyncio.gather(runnable.<a href="#LineListOutputParser-ainvoke">ainvoke</a>(2),&nbsp;runnable.<a href="#LineListOutputParser-ainvoke">ainvoke</a>(3))<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;asyncio.run(concurrent_runs())<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Result:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;start&nbsp;callback&nbsp;starts&nbsp;at&nbsp;2025-03-01T07:05:22.875378+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;start&nbsp;callback&nbsp;starts&nbsp;at&nbsp;2025-03-01T07:05:22.875495+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;start&nbsp;callback&nbsp;ends&nbsp;at&nbsp;2025-03-01T07:05:25.878862+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;start&nbsp;callback&nbsp;ends&nbsp;at&nbsp;2025-03-01T07:05:25.878947+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Runnable[2s]:&nbsp;starts&nbsp;at&nbsp;2025-03-01T07:05:25.879392+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Runnable[3s]:&nbsp;starts&nbsp;at&nbsp;2025-03-01T07:05:25.879804+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Runnable[2s]:&nbsp;ends&nbsp;at&nbsp;2025-03-01T07:05:27.881998+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;end&nbsp;callback&nbsp;starts&nbsp;at&nbsp;2025-03-01T07:05:27.882360+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Runnable[3s]:&nbsp;ends&nbsp;at&nbsp;2025-03-01T07:05:28.881737+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;end&nbsp;callback&nbsp;starts&nbsp;at&nbsp;2025-03-01T07:05:28.882428+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;end&nbsp;callback&nbsp;ends&nbsp;at&nbsp;2025-03-01T07:05:29.883893+00:00<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;end&nbsp;callback&nbsp;ends&nbsp;at&nbsp;2025-03-01T07:05:30.884831+00:00</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-with_config"><strong>with_config</strong></a>(self, config: 'Optional[RunnableConfig]' = None, **kwargs: 'Any') -&gt; 'Runnable[Input, Output]'</dt><dd><span class="code">Bind&nbsp;config&nbsp;to&nbsp;a&nbsp;``Runnable``,&nbsp;returning&nbsp;a&nbsp;new&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;bind&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;with&nbsp;the&nbsp;config&nbsp;bound.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-with_fallbacks"><strong>with_fallbacks</strong></a>(
+    self,
+    fallbacks: 'Sequence[Runnable[Input, Output]]',
+    *,
+    exceptions_to_handle: 'tuple[type[BaseException], ...]' = (&lt;class 'Exception'&gt;,),
+    exception_key: 'Optional[str]' = None
+) -&gt; 'RunnableWithFallbacksT[Input, Output]'</dt><dd><span class="code">Add&nbsp;fallbacks&nbsp;to&nbsp;a&nbsp;``Runnable``,&nbsp;returning&nbsp;a&nbsp;new&nbsp;``Runnable``.<br>
+&nbsp;<br>
+The&nbsp;new&nbsp;``Runnable``&nbsp;will&nbsp;try&nbsp;the&nbsp;original&nbsp;``Runnable``,&nbsp;and&nbsp;then&nbsp;each&nbsp;fallback<br>
+in&nbsp;order,&nbsp;upon&nbsp;failures.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fallbacks:&nbsp;A&nbsp;sequence&nbsp;of&nbsp;runnables&nbsp;to&nbsp;try&nbsp;if&nbsp;the&nbsp;original&nbsp;``Runnable``&nbsp;fails.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exceptions_to_handle:&nbsp;A&nbsp;tuple&nbsp;of&nbsp;exception&nbsp;types&nbsp;to&nbsp;handle.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;``(Exception,)``.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exception_key:&nbsp;If&nbsp;string&nbsp;is&nbsp;specified&nbsp;then&nbsp;handled&nbsp;exceptions&nbsp;will&nbsp;be&nbsp;passed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;fallbacks&nbsp;as&nbsp;part&nbsp;of&nbsp;the&nbsp;input&nbsp;under&nbsp;the&nbsp;specified&nbsp;key.&nbsp;If&nbsp;None,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceptions&nbsp;will&nbsp;not&nbsp;be&nbsp;passed&nbsp;to&nbsp;fallbacks.&nbsp;If&nbsp;used,&nbsp;the&nbsp;base&nbsp;``Runnable``<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;its&nbsp;fallbacks&nbsp;must&nbsp;accept&nbsp;a&nbsp;dictionary&nbsp;as&nbsp;input.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;that&nbsp;will&nbsp;try&nbsp;the&nbsp;original&nbsp;``Runnable``,&nbsp;and&nbsp;then&nbsp;each<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fallback&nbsp;in&nbsp;order,&nbsp;upon&nbsp;failures.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;typing&nbsp;import&nbsp;Iterator<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableGenerator<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_generate_immediate_error(input:&nbsp;Iterator)&nbsp;-&gt;&nbsp;Iterator[str]:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;ValueError()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;""<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_generate(input:&nbsp;Iterator)&nbsp;-&gt;&nbsp;Iterator[str]:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;from&nbsp;"foo&nbsp;bar"<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableGenerator(_generate_immediate_error).<a href="#LineListOutputParser-with_fallbacks">with_fallbacks</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[RunnableGenerator(_generate)]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(''.join(runnable.<a href="#LineListOutputParser-stream">stream</a>({})))&nbsp;#foo&nbsp;bar<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fallbacks:&nbsp;A&nbsp;sequence&nbsp;of&nbsp;runnables&nbsp;to&nbsp;try&nbsp;if&nbsp;the&nbsp;original&nbsp;``Runnable``&nbsp;fails.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exceptions_to_handle:&nbsp;A&nbsp;tuple&nbsp;of&nbsp;exception&nbsp;types&nbsp;to&nbsp;handle.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exception_key:&nbsp;If&nbsp;string&nbsp;is&nbsp;specified&nbsp;then&nbsp;handled&nbsp;exceptions&nbsp;will&nbsp;be&nbsp;passed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;fallbacks&nbsp;as&nbsp;part&nbsp;of&nbsp;the&nbsp;input&nbsp;under&nbsp;the&nbsp;specified&nbsp;key.&nbsp;If&nbsp;None,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceptions&nbsp;will&nbsp;not&nbsp;be&nbsp;passed&nbsp;to&nbsp;fallbacks.&nbsp;If&nbsp;used,&nbsp;the&nbsp;base&nbsp;``Runnable``<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;its&nbsp;fallbacks&nbsp;must&nbsp;accept&nbsp;a&nbsp;dictionary&nbsp;as&nbsp;input.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;that&nbsp;will&nbsp;try&nbsp;the&nbsp;original&nbsp;``Runnable``,&nbsp;and&nbsp;then&nbsp;each<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fallback&nbsp;in&nbsp;order,&nbsp;upon&nbsp;failures.</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-with_listeners"><strong>with_listeners</strong></a>(
+    self,
+    *,
+    on_start: 'Optional[Union[Callable[[Run], None], Callable[[Run, RunnableConfig], None]]]' = None,
+    on_end: 'Optional[Union[Callable[[Run], None], Callable[[Run, RunnableConfig], None]]]' = None,
+    on_error: 'Optional[Union[Callable[[Run], None], Callable[[Run, RunnableConfig], None]]]' = None
+) -&gt; 'Runnable[Input, Output]'</dt><dd><span class="code">Bind&nbsp;lifecycle&nbsp;listeners&nbsp;to&nbsp;a&nbsp;``Runnable``,&nbsp;returning&nbsp;a&nbsp;new&nbsp;``Runnable``.<br>
+&nbsp;<br>
+The&nbsp;Run&nbsp;object&nbsp;contains&nbsp;information&nbsp;about&nbsp;the&nbsp;run,&nbsp;including&nbsp;its&nbsp;``id``,<br>
+``type``,&nbsp;``input``,&nbsp;``output``,&nbsp;``error``,&nbsp;``start_time``,&nbsp;``end_time``,&nbsp;and<br>
+any&nbsp;tags&nbsp;or&nbsp;metadata&nbsp;added&nbsp;to&nbsp;the&nbsp;run.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on_start:&nbsp;Called&nbsp;before&nbsp;the&nbsp;``Runnable``&nbsp;starts&nbsp;running,&nbsp;with&nbsp;the&nbsp;``Run``<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;object.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on_end:&nbsp;Called&nbsp;after&nbsp;the&nbsp;``Runnable``&nbsp;finishes&nbsp;running,&nbsp;with&nbsp;the&nbsp;``Run``<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;object.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on_error:&nbsp;Called&nbsp;if&nbsp;the&nbsp;``Runnable``&nbsp;throws&nbsp;an&nbsp;error,&nbsp;with&nbsp;the&nbsp;``Run``<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;object.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;``Runnable``&nbsp;with&nbsp;the&nbsp;listeners&nbsp;bound.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.tracers.schemas&nbsp;import&nbsp;Run<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;time<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;test_runnable(time_to_sleep&nbsp;:&nbsp;int):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time.sleep(time_to_sleep)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;fn_start(run_obj:&nbsp;Run):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("start_time:",&nbsp;run_obj.start_time)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;fn_end(run_obj:&nbsp;Run):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("end_time:",&nbsp;run_obj.end_time)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;RunnableLambda(test_runnable).<a href="#LineListOutputParser-with_listeners">with_listeners</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on_start=fn_start,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on_end=fn_end<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#LineListOutputParser-invoke">invoke</a>(2)</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-with_retry"><strong>with_retry</strong></a>(
+    self,
+    *,
+    retry_if_exception_type: 'tuple[type[BaseException], ...]' = (&lt;class 'Exception'&gt;,),
+    wait_exponential_jitter: 'bool' = True,
+    exponential_jitter_params: 'Optional[ExponentialJitterParams]' = None,
+    stop_after_attempt: 'int' = 3
+) -&gt; 'Runnable[Input, Output]'</dt><dd><span class="code">Create&nbsp;a&nbsp;new&nbsp;Runnable&nbsp;that&nbsp;retries&nbsp;the&nbsp;original&nbsp;Runnable&nbsp;on&nbsp;exceptions.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;retry_if_exception_type:&nbsp;A&nbsp;tuple&nbsp;of&nbsp;exception&nbsp;types&nbsp;to&nbsp;retry&nbsp;on.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;(Exception,).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;wait_exponential_jitter:&nbsp;Whether&nbsp;to&nbsp;add&nbsp;jitter&nbsp;to&nbsp;the&nbsp;wait<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time&nbsp;between&nbsp;retries.&nbsp;Defaults&nbsp;to&nbsp;True.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stop_after_attempt:&nbsp;The&nbsp;maximum&nbsp;number&nbsp;of&nbsp;attempts&nbsp;to&nbsp;make&nbsp;before<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;giving&nbsp;up.&nbsp;Defaults&nbsp;to&nbsp;3.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exponential_jitter_params:&nbsp;Parameters&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``tenacity.wait_exponential_jitter``.&nbsp;Namely:&nbsp;``initial``,&nbsp;``max``,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``exp_base``,&nbsp;and&nbsp;``jitter``&nbsp;(all&nbsp;float&nbsp;values).<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;Runnable&nbsp;that&nbsp;retries&nbsp;the&nbsp;original&nbsp;Runnable&nbsp;on&nbsp;exceptions.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;count&nbsp;=&nbsp;0<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_lambda(x:&nbsp;int)&nbsp;-&gt;&nbsp;None:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;global&nbsp;count<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count&nbsp;=&nbsp;count&nbsp;+&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;x&nbsp;==&nbsp;1:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;ValueError("x&nbsp;is&nbsp;1")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(_lambda)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable.<a href="#LineListOutputParser-with_retry">with_retry</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stop_after_attempt=2,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retry_if_exception_type=(ValueError,),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<a href="#LineListOutputParser-invoke">invoke</a>(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;except&nbsp;ValueError:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;assert&nbsp;(count&nbsp;==&nbsp;2)</span></dd></dl>
+
+<dl><dt><a name="LineListOutputParser-with_types"><strong>with_types</strong></a>(
+    self,
+    *,
+    input_type: 'Optional[type[Input]]' = None,
+    output_type: 'Optional[type[Output]]' = None
+) -&gt; 'Runnable[Input, Output]'</dt><dd><span class="code">Bind&nbsp;input&nbsp;and&nbsp;output&nbsp;types&nbsp;to&nbsp;a&nbsp;``Runnable``,&nbsp;returning&nbsp;a&nbsp;new&nbsp;``Runnable``.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input_type:&nbsp;The&nbsp;input&nbsp;type&nbsp;to&nbsp;bind&nbsp;to&nbsp;the&nbsp;``Runnable``.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;output_type:&nbsp;The&nbsp;output&nbsp;type&nbsp;to&nbsp;bind&nbsp;to&nbsp;the&nbsp;``Runnable``.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;Runnable&nbsp;with&nbsp;the&nbsp;types&nbsp;bound.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="langchain_core.runnables.base.html#Runnable">langchain_core.runnables.base.Runnable</a>:<br>
+<dl><dt><strong>config_specs</strong></dt>
+<dd><span class="code">List&nbsp;configurable&nbsp;fields&nbsp;for&nbsp;this&nbsp;``Runnable``.</span></dd>
+</dl>
+<dl><dt><strong>input_schema</strong></dt>
+<dd><span class="code">The&nbsp;type&nbsp;of&nbsp;input&nbsp;this&nbsp;``Runnable``&nbsp;accepts&nbsp;specified&nbsp;as&nbsp;a&nbsp;pydantic&nbsp;model.</span></dd>
+</dl>
+<dl><dt><strong>output_schema</strong></dt>
+<dd><span class="code">The&nbsp;type&nbsp;of&nbsp;output&nbsp;this&nbsp;``Runnable``&nbsp;produces&nbsp;specified&nbsp;as&nbsp;a&nbsp;pydantic&nbsp;model.</span></dd>
+</dl>
+<hr>
+Class methods inherited from <a href="typing.html#Generic">typing.Generic</a>:<br>
+<dl><dt><a name="LineListOutputParser-__init_subclass__"><strong>__init_subclass__</strong></a>(...)</dt><dd><span class="code">Function&nbsp;to&nbsp;initialize&nbsp;subclasses.</span></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-multi_query"><strong>multi_query</strong></a>()</dt><dd><span class="code">Define&nbsp;the&nbsp;LLM&nbsp;and&nbsp;the&nbsp;prompt&nbsp;and&nbsp;return&nbsp;the&nbsp;chain&nbsp;for&nbsp;processing.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>List</strong> = typing.List<br>
+<strong>__copyright__</strong> = 'Copyright (C) 2025 Martin Brossard'<br>
+<strong>__license__</strong> = 'MIT'</td></tr></table><p>
+<table class="section">
+<tr class="decor author-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Author</strong></td></tr>
+    
+<tr><td class="decor author-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn">Martin&nbsp;Brossard</td></tr></table>
+</body></html>

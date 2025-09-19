@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module rag</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">rag</strong> (version 0.1)</td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Czzzmasterarbeit%5C02%20wissenschaftliche%20arbeit%5C05%20projektcode%5C08_final%5C02_version_final%5Crag.py">c:\zzzmasterarbeit\02 wissenschaftliche arbeit\05 projektcode\08_final\02_version_final\rag.py</a></td></tr></table>
+    <p><span class="code">This&nbsp;module&nbsp;represents&nbsp;the&nbsp;RAG&nbsp;process<br>
+&nbsp;<br>
+Functions:<br>
+-&nbsp;<a href="#-load_documents">load_documents</a>():&nbsp;Loads&nbsp;data&nbsp;basis&nbsp;from&nbsp;load_text.py.<br>
+-&nbsp;<a href="#-split_documents">split_documents</a>(docs):&nbsp;Splits&nbsp;the&nbsp;databasis&nbsp;into&nbsp;chunks.<br>
+-&nbsp;<a href="#-load_embeddings">load_embeddings</a>(chunks):&nbsp;Creates&nbsp;a&nbsp;vectorstore.<br>
+-&nbsp;<a href="#-create_chain">create_chain</a>(llm_chain,&nbsp;chunks,&nbsp;vdatabase):&nbsp;Creates&nbsp;a&nbsp;retrieval&nbsp;chain.<br>
+-&nbsp;<a href="#-generate_response">generate_response</a>(retrieval_chain,&nbsp;query,&nbsp;chat_history):&nbsp;Invokes&nbsp;the&nbsp;retrieval<br>
+chain.<br>
+-&nbsp;<a href="#-get_vdatabase">get_vdatabase</a>(_chunks):&nbsp;returns&nbsp;the&nbsp;vetorstore&nbsp;to&nbsp;cache&nbsp;the&nbsp;results.<br>
+-&nbsp;<a href="#-query">query</a>(query):&nbsp;Calls&nbsp;all&nbsp;relevant&nbsp;functions.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="config_ollama.html">config_ollama</a><br>
+</td><td class="multicolumn"><a href="logging.html">logging</a><br>
+</td><td class="multicolumn"><a href="nltk.html">nltk</a><br>
+</td><td class="multicolumn"><a href="streamlit.html">streamlit</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-create_chain"><strong>create_chain</strong></a>(llm_chain, chunks, vdatabase)</dt><dd><span class="code">Import&nbsp;LLM&nbsp;and&nbsp;prompt.&nbsp;Create&nbsp;a&nbsp;document&nbsp;chain&nbsp;and&nbsp;a&nbsp;retreiver.&nbsp;Finally,<br>
+return&nbsp;an&nbsp;retrieval&nbsp;chain.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+llm_chain&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;chain&nbsp;to&nbsp;create&nbsp;multiple&nbsp;queries<br>
+chunks&nbsp;--&nbsp;hands&nbsp;over&nbsp;split&nbsp;documents<br>
+vdatabase&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;vectorstore</span></dd></dl>
+ <dl><dt><a name="-generate_response"><strong>generate_response</strong></a>(retrieval_chain, query, chat_history)</dt><dd><span class="code">Invoke&nbsp;the&nbsp;query&nbsp;and&nbsp;return&nbsp;the&nbsp;generated&nbsp;response.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+retrieval_chain&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;retrieval&nbsp;chain&nbsp;to&nbsp;invoke<br>
+query&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;current&nbsp;query<br>
+chat_history&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;previous&nbsp;dialog</span></dd></dl>
+ <dl><dt><a name="-get_vdatabase"><strong>get_vdatabase</strong></a>(_chunks)</dt><dd><span class="code">Return&nbsp;the&nbsp;vetorstore&nbsp;an&nbsp;save&nbsp;it&nbsp;as&nbsp;the&nbsp;cache.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+chunks&nbsp;--&nbsp;hands&nbsp;over&nbsp;split&nbsp;documents</span></dd></dl>
+ <dl><dt><a name="-load_documents"><strong>load_documents</strong></a>()</dt><dd><span class="code">Convert&nbsp;the&nbsp;data&nbsp;basis&nbsp;into&nbsp;the&nbsp;langchain&nbsp;document&nbsp;format&nbsp;and&nbsp;return&nbsp;the<br>
+docs.</span></dd></dl>
+ <dl><dt><a name="-load_embeddings"><strong>load_embeddings</strong></a>(chunks)</dt><dd><span class="code">Convert&nbsp;the&nbsp;chunks&nbsp;to&nbsp;vectors&nbsp;and&nbsp;save&nbsp;them&nbsp;in&nbsp;the&nbsp;vectorstore<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+chunks&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;split&nbsp;documents</span></dd></dl>
+ <dl><dt><a name="-query"><strong>query</strong></a>(query)</dt><dd><span class="code">Call&nbsp;all&nbsp;functions&nbsp;and&nbsp;return&nbsp;the&nbsp;response<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+query&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;current&nbsp;query</span></dd></dl>
+ <dl><dt><a name="-split_documents"><strong>split_documents</strong></a>(docs)</dt><dd><span class="code">Split&nbsp;the&nbsp;whole&nbsp;data&nbsp;into&nbsp;chunks&nbsp;and&nbsp;return&nbsp;them<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+docs&nbsp;-&nbsp;hands&nbsp;over&nbsp;docs&nbsp;in&nbsp;the&nbsp;langchain&nbsp;document&nbsp;format</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>__copyright__</strong> = 'Copyright (C) 2025 Martin Brossard'<br>
+<strong>__license__</strong> = 'MIT'<br>
+<strong>chat_history</strong> = []<br>
+<strong>dots</strong> = re.compile('[.。．｡]')</td></tr></table><p>
+<table class="section">
+<tr class="decor author-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Author</strong></td></tr>
+    
+<tr><td class="decor author-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn">Martin&nbsp;Brossard</td></tr></table>
+</body></html>

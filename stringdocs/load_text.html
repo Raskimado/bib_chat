@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module load_text</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">load_text</strong> (version 0.1)</td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Czzzmasterarbeit%5C02%20wissenschaftliche%20arbeit%5C05%20projektcode%5C08_final%5C02_version_final%5Cload_text.py">c:\zzzmasterarbeit\02 wissenschaftliche arbeit\05 projektcode\08_final\02_version_final\load_text.py</a></td></tr></table>
+    <p><span class="code">This&nbsp;module&nbsp;is&nbsp;responsible&nbsp;for&nbsp;the&nbsp;cleaning&nbsp;and&nbsp;normalisation&nbsp;of&nbsp;the<br>
+bibliographic&nbsp;data&nbsp;from&nbsp;the&nbsp;library.&nbsp;It&nbsp;creates&nbsp;a&nbsp;data&nbsp;basis&nbsp;that&nbsp;can&nbsp;be&nbsp;used<br>
+in&nbsp;the&nbsp;RAG&nbsp;process.<br>
+&nbsp;<br>
+Functions:<br>
+-&nbsp;<a href="#-load_json">load_json</a>():&nbsp;Loads&nbsp;all&nbsp;JSON&nbsp;files&nbsp;from&nbsp;a&nbsp;directory.<br>
+-&nbsp;<a href="#-find_subfield">find_subfield</a>(field,&nbsp;key):&nbsp;Finds&nbsp;the&nbsp;relevants&nbsp;subfields.<br>
+-&nbsp;<a href="#-find_subfield">find_subfield</a>(field,&nbsp;key):&nbsp;Combines&nbsp;subfields&nbsp;when&nbsp;necessary.<br>
+-&nbsp;<a href="#-clean_code">clean_code</a>(text):&nbsp;Removes&nbsp;unwanted&nbsp;characters.<br>
+-&nbsp;<a href="#-adapt_text">adapt_text</a>(records):&nbsp;Returns&nbsp;revised&nbsp;data&nbsp;basis&nbsp;for&nbsp;RAG&nbsp;processing.<br>
+&nbsp;<br>
+Exceptions:<br>
+-&nbsp;JSONDecodeError:&nbsp;Raised&nbsp;if&nbsp;JSON&nbsp;files&nbsp;cannot&nbsp;be&nbsp;loaded.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-adapt_text"><strong>adapt_text</strong></a>(records)</dt><dd><span class="code">After&nbsp;cleaning&nbsp;and&nbsp;normalising&nbsp;the&nbsp;data&nbsp;return&nbsp;the&nbsp;new&nbsp;data&nbsp;basis.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+records&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;orginal&nbsp;content&nbsp;form&nbsp;the&nbsp;JSON&nbsp;files.<br>
+&nbsp;<br>
+Help&nbsp;functions:<br>
+-&nbsp;find_subfield:&nbsp;Finds&nbsp;corresponding&nbsp;subfield.<br>
+-&nbsp;list_to_string:&nbsp;Combines&nbsp;the&nbsp;content&nbsp;when&nbsp;a&nbsp;subfield&nbsp;occurs&nbsp;multiple&nbsp;times.<br>
+-&nbsp;clean_code:&nbsp;Removes&nbsp;unwanted&nbsp;characters.</span></dd></dl>
+ <dl><dt><a name="-clean_code"><strong>clean_code</strong></a>(text)</dt><dd><span class="code">Remove&nbsp;all&nbsp;unwanted&nbsp;characters&nbsp;and&nbsp;return&nbsp;the&nbsp;result.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+text&nbsp;-&nbsp;hands&nbsp;over&nbsp;the&nbsp;data&nbsp;basis&nbsp;afer&nbsp;it&nbsp;is&nbsp;normalised.</span></dd></dl>
+ <dl><dt><a name="-find_material_type"><strong>find_material_type</strong></a>(leader, field_008)</dt><dd><span class="code">Return&nbsp;the&nbsp;correct&nbsp;material&nbsp;typ.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+leader&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;MARC&nbsp;field<br>
+field_008&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;MARC&nbsp;field</span></dd></dl>
+ <dl><dt><a name="-find_subfield"><strong>find_subfield</strong></a>(field, key)</dt><dd><span class="code">Find&nbsp;the&nbsp;subfield&nbsp;with&nbsp;corresponding&nbsp;key&nbsp;and&nbsp;return&nbsp;its&nbsp;content.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+field&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;MARC&nbsp;field<br>
+key&nbsp;--&nbsp;hands&nbsp;over&nbsp;the&nbsp;key&nbsp;from&nbsp;the&nbsp;MARC&nbsp;field</span></dd></dl>
+ <dl><dt><a name="-list_to_string"><strong>list_to_string</strong></a>(subfield)</dt><dd><span class="code">Keyword&nbsp;arguments:<br>
+list&nbsp;--</span></dd></dl>
+ <dl><dt><a name="-load_json"><strong>load_json</strong></a>()</dt><dd><span class="code">Open&nbsp;all&nbsp;JSON&nbsp;files&nbsp;in&nbsp;the&nbsp;directory&nbsp;and&nbsp;retrun&nbsp;the&nbsp;content&nbsp;as&nbsp;a&nbsp;list.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>__copyright__</strong> = 'Copyright (C) 2025 Martin Brossard'<br>
+<strong>__license__</strong> = 'MIT'<br>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor author-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Author</strong></td></tr>
+    
+<tr><td class="decor author-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn">Martin&nbsp;Brossard</td></tr></table>
+</body></html>
