@@ -22,21 +22,24 @@ OpenAI (Use OpenAI API)
 - Embedding: text-embedding-3-small
     
 Python dependencies (pip install *)
-- faiss-cpu==1.12.0
-- rank_bm25==0.2.2
-- rank_bm25 nltk==3.9.1
-- langchain==0.3.72
-- langchain_core==0.3.76
-- langchain_community==0.3.29
-- langchain_ollama==0.3.8
-- streamlit==1.49.1
-- jq==1.10.0
+- faiss-cpu
+- rank_bm25
+- rank_bm25 nltk
+- langchain
+- langchain_core
+- langchain_community
+- langchain_ollama
+- langchain_openai
+- python-dotenv
+- streamlit
+- jq
 
 ## Usage
 If you pull the directory on your computer you can start the program with:
 streamlit run st_app.py.
 For a succesful execution you have to use local Ollama or OpenAI with the
 environment varibles.
+
 
 
 
